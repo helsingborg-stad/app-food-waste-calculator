@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		88006F9727E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006F9627E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift */; };
+		88006F9927E0DE3E00BA6D4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006F9827E0DE3E00BA6D4C /* ContentView.swift */; };
+		88006F9B27E0DE4300BA6D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88006F9A27E0DE4300BA6D4C /* Assets.xcassets */; };
+		88006F9E27E0DE4300BA6D4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88006F9D27E0DE4300BA6D4C /* Preview Assets.xcassets */; };
+		88006FA827E0DE4300BA6D4C /* Food_waste_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FA727E0DE4300BA6D4C /* Food_waste_calculatorTests.swift */; };
+		88006FB227E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FB127E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift */; };
+		88006FB427E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FB327E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		88006FA427E0DE4300BA6D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88006F8B27E0DE3D00BA6D4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88006F9227E0DE3E00BA6D4C;
+			remoteInfo = "Food waste calculator";
+		};
+		88006FAE27E0DE4300BA6D4C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88006F8B27E0DE3D00BA6D4C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88006F9227E0DE3E00BA6D4C;
+			remoteInfo = "Food waste calculator";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		88006F9327E0DE3E00BA6D4C /* Food waste calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food waste calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88006F9627E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteCalculatorApp.swift; sourceTree = "<group>"; };
+		88006F9827E0DE3E00BA6D4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88006F9A27E0DE4300BA6D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88006F9D27E0DE4300BA6D4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88006FA327E0DE4300BA6D4C /* Food waste calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food waste calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88006FA727E0DE4300BA6D4C /* Food_waste_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_waste_calculatorTests.swift; sourceTree = "<group>"; };
+		88006FAD27E0DE4300BA6D4C /* Food waste calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food waste calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		88006FB127E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_waste_calculatorUITests.swift; sourceTree = "<group>"; };
+		88006FB327E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_waste_calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		88006F9027E0DE3E00BA6D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88006FA027E0DE4300BA6D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88006FAA27E0DE4300BA6D4C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		88006F8A27E0DE3D00BA6D4C = {
+			isa = PBXGroup;
+			children = (
+				88006F9527E0DE3E00BA6D4C /* Food waste calculator */,
+				88006FA627E0DE4300BA6D4C /* Food waste calculatorTests */,
+				88006FB027E0DE4300BA6D4C /* Food waste calculatorUITests */,
+				88006F9427E0DE3E00BA6D4C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		88006F9427E0DE3E00BA6D4C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				88006F9327E0DE3E00BA6D4C /* Food waste calculator.app */,
+				88006FA327E0DE4300BA6D4C /* Food waste calculatorTests.xctest */,
+				88006FAD27E0DE4300BA6D4C /* Food waste calculatorUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		88006F9527E0DE3E00BA6D4C /* Food waste calculator */ = {
+			isa = PBXGroup;
+			children = (
+				88006FC227E0DF6900BA6D4C /* Models */,
+				88006FC127E0DF2300BA6D4C /* Views */,
+				88006FC027E0DEDE00BA6D4C /* App */,
+				88006F9C27E0DE4300BA6D4C /* Preview Content */,
+			);
+			path = "Food waste calculator";
+			sourceTree = "<group>";
+		};
+		88006F9C27E0DE4300BA6D4C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				88006F9D27E0DE4300BA6D4C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88006FA627E0DE4300BA6D4C /* Food waste calculatorTests */ = {
+			isa = PBXGroup;
+			children = (
+				88006FA727E0DE4300BA6D4C /* Food_waste_calculatorTests.swift */,
+			);
+			path = "Food waste calculatorTests";
+			sourceTree = "<group>";
+		};
+		88006FB027E0DE4300BA6D4C /* Food waste calculatorUITests */ = {
+			isa = PBXGroup;
+			children = (
+				88006FB127E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift */,
+				88006FB327E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift */,
+			);
+			path = "Food waste calculatorUITests";
+			sourceTree = "<group>";
+		};
+		88006FC027E0DEDE00BA6D4C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				88006F9627E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift */,
+				88006F9A27E0DE4300BA6D4C /* Assets.xcassets */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		88006FC127E0DF2300BA6D4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88006F9827E0DE3E00BA6D4C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		88006FC227E0DF6900BA6D4C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		88006F9227E0DE3E00BA6D4C /* Food waste calculator */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88006FB727E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculator" */;
+			buildPhases = (
+				88006F8F27E0DE3E00BA6D4C /* Sources */,
+				88006F9027E0DE3E00BA6D4C /* Frameworks */,
+				88006F9127E0DE3E00BA6D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Food waste calculator";
+			productName = "Food waste calculator";
+			productReference = 88006F9327E0DE3E00BA6D4C /* Food waste calculator.app */;
+			productType = "com.apple.product-type.application";
+		};
+		88006FA227E0DE4300BA6D4C /* Food waste calculatorTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88006FBA27E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculatorTests" */;
+			buildPhases = (
+				88006F9F27E0DE4300BA6D4C /* Sources */,
+				88006FA027E0DE4300BA6D4C /* Frameworks */,
+				88006FA127E0DE4300BA6D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88006FA527E0DE4300BA6D4C /* PBXTargetDependency */,
+			);
+			name = "Food waste calculatorTests";
+			productName = "Food waste calculatorTests";
+			productReference = 88006FA327E0DE4300BA6D4C /* Food waste calculatorTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		88006FAC27E0DE4300BA6D4C /* Food waste calculatorUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 88006FBD27E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculatorUITests" */;
+			buildPhases = (
+				88006FA927E0DE4300BA6D4C /* Sources */,
+				88006FAA27E0DE4300BA6D4C /* Frameworks */,
+				88006FAB27E0DE4300BA6D4C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				88006FAF27E0DE4300BA6D4C /* PBXTargetDependency */,
+			);
+			name = "Food waste calculatorUITests";
+			productName = "Food waste calculatorUITests";
+			productReference = 88006FAD27E0DE4300BA6D4C /* Food waste calculatorUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		88006F8B27E0DE3D00BA6D4C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					88006F9227E0DE3E00BA6D4C = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					88006FA227E0DE4300BA6D4C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 88006F9227E0DE3E00BA6D4C;
+					};
+					88006FAC27E0DE4300BA6D4C = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 88006F9227E0DE3E00BA6D4C;
+					};
+				};
+			};
+			buildConfigurationList = 88006F8E27E0DE3E00BA6D4C /* Build configuration list for PBXProject "Food waste calculator" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 88006F8A27E0DE3D00BA6D4C;
+			productRefGroup = 88006F9427E0DE3E00BA6D4C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88006F9227E0DE3E00BA6D4C /* Food waste calculator */,
+				88006FA227E0DE4300BA6D4C /* Food waste calculatorTests */,
+				88006FAC27E0DE4300BA6D4C /* Food waste calculatorUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		88006F9127E0DE3E00BA6D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88006F9E27E0DE4300BA6D4C /* Preview Assets.xcassets in Resources */,
+				88006F9B27E0DE4300BA6D4C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88006FA127E0DE4300BA6D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88006FAB27E0DE4300BA6D4C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		88006F8F27E0DE3E00BA6D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88006F9927E0DE3E00BA6D4C /* ContentView.swift in Sources */,
+				88006F9727E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88006F9F27E0DE4300BA6D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88006FA827E0DE4300BA6D4C /* Food_waste_calculatorTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		88006FA927E0DE4300BA6D4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88006FB227E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift in Sources */,
+				88006FB427E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		88006FA527E0DE4300BA6D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88006F9227E0DE3E00BA6D4C /* Food waste calculator */;
+			targetProxy = 88006FA427E0DE4300BA6D4C /* PBXContainerItemProxy */;
+		};
+		88006FAF27E0DE4300BA6D4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88006F9227E0DE3E00BA6D4C /* Food waste calculator */;
+			targetProxy = 88006FAE27E0DE4300BA6D4C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		88006FB527E0DE4300BA6D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		88006FB627E0DE4300BA6D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		88006FB827E0DE4300BA6D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Food waste calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = MHBEW6TVG2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		88006FB927E0DE4300BA6D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Food waste calculator/Preview Content\"";
+				DEVELOPMENT_TEAM = MHBEW6TVG2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculator";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		88006FBB27E0DE4300BA6D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHBEW6TVG2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food waste calculator.app/Food waste calculator";
+			};
+			name = Debug;
+		};
+		88006FBC27E0DE4300BA6D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHBEW6TVG2;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculatorTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food waste calculator.app/Food waste calculator";
+			};
+			name = Release;
+		};
+		88006FBE27E0DE4300BA6D4C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHBEW6TVG2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Food waste calculator";
+			};
+			name = Debug;
+		};
+		88006FBF27E0DE4300BA6D4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = MHBEW6TVG2;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculatorUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Food waste calculator";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		88006F8E27E0DE3E00BA6D4C /* Build configuration list for PBXProject "Food waste calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88006FB527E0DE4300BA6D4C /* Debug */,
+				88006FB627E0DE4300BA6D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88006FB727E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88006FB827E0DE4300BA6D4C /* Debug */,
+				88006FB927E0DE4300BA6D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88006FBA27E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculatorTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88006FBB27E0DE4300BA6D4C /* Debug */,
+				88006FBC27E0DE4300BA6D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		88006FBD27E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculatorUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				88006FBE27E0DE4300BA6D4C /* Debug */,
+				88006FBF27E0DE4300BA6D4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 88006F8B27E0DE3D00BA6D4C /* Project object */;
+}
