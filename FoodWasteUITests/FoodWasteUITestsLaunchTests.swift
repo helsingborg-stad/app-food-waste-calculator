@@ -1,13 +1,13 @@
 //
-//  Food_waste_calculatorUITestsLaunchTests.swift
-//  Food waste calculatorUITests
+//  FoodWasteUITestsLaunchTests.swift
+//  FoodWasteUITests
 //
 //  Created by Jonatan Hanson on 2022-03-15.
 //
 
 import XCTest
 
-class Food_waste_calculatorUITestsLaunchTests: XCTestCase {
+class FoodWasteUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

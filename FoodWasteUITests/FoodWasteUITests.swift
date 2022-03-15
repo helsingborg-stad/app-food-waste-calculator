@@ -1,13 +1,13 @@
 //
-//  Food_waste_calculatorUITests.swift
-//  Food waste calculatorUITests
+//  FoodWasteUITests.swift
+//  FoodWasteUITests
 //
 //  Created by Jonatan Hanson on 2022-03-15.
 //
 
 import XCTest
 
-class Food_waste_calculatorUITests: XCTestCase {
+class FoodWasteUITests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

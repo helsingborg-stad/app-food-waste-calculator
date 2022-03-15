@@ -7,61 +7,61 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88006F9727E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006F9627E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift */; };
-		88006F9927E0DE3E00BA6D4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006F9827E0DE3E00BA6D4C /* ContentView.swift */; };
-		88006F9B27E0DE4300BA6D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88006F9A27E0DE4300BA6D4C /* Assets.xcassets */; };
-		88006F9E27E0DE4300BA6D4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88006F9D27E0DE4300BA6D4C /* Preview Assets.xcassets */; };
-		88006FA827E0DE4300BA6D4C /* Food_waste_calculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FA727E0DE4300BA6D4C /* Food_waste_calculatorTests.swift */; };
-		88006FB227E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FB127E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift */; };
-		88006FB427E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FB327E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift */; };
+		88006FD027E0E48800BA6D4C /* FoodWasteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FCF27E0E48800BA6D4C /* FoodWasteApp.swift */; };
+		88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FD127E0E48800BA6D4C /* ContentView.swift */; };
+		88006FD427E0E48B00BA6D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88006FD327E0E48B00BA6D4C /* Assets.xcassets */; };
+		88006FD727E0E48B00BA6D4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88006FD627E0E48B00BA6D4C /* Preview Assets.xcassets */; };
+		88006FE127E0E48B00BA6D4C /* FoodWasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FE027E0E48B00BA6D4C /* FoodWasteTests.swift */; };
+		88006FEB27E0E48B00BA6D4C /* FoodWasteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */; };
+		88006FED27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		88006FA427E0DE4300BA6D4C /* PBXContainerItemProxy */ = {
+		88006FDD27E0E48B00BA6D4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 88006F8B27E0DE3D00BA6D4C /* Project object */;
+			containerPortal = 88006FC427E0E48700BA6D4C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88006F9227E0DE3E00BA6D4C;
-			remoteInfo = "Food waste calculator";
+			remoteGlobalIDString = 88006FCB27E0E48800BA6D4C;
+			remoteInfo = FoodWaste;
 		};
-		88006FAE27E0DE4300BA6D4C /* PBXContainerItemProxy */ = {
+		88006FE727E0E48B00BA6D4C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 88006F8B27E0DE3D00BA6D4C /* Project object */;
+			containerPortal = 88006FC427E0E48700BA6D4C /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88006F9227E0DE3E00BA6D4C;
-			remoteInfo = "Food waste calculator";
+			remoteGlobalIDString = 88006FCB27E0E48800BA6D4C;
+			remoteInfo = FoodWaste;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		88006F9327E0DE3E00BA6D4C /* Food waste calculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Food waste calculator.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88006F9627E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteCalculatorApp.swift; sourceTree = "<group>"; };
-		88006F9827E0DE3E00BA6D4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		88006F9A27E0DE4300BA6D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		88006F9D27E0DE4300BA6D4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		88006FA327E0DE4300BA6D4C /* Food waste calculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food waste calculatorTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88006FA727E0DE4300BA6D4C /* Food_waste_calculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_waste_calculatorTests.swift; sourceTree = "<group>"; };
-		88006FAD27E0DE4300BA6D4C /* Food waste calculatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Food waste calculatorUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		88006FB127E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_waste_calculatorUITests.swift; sourceTree = "<group>"; };
-		88006FB327E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food_waste_calculatorUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88006FCC27E0E48800BA6D4C /* FoodWaste.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodWaste.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		88006FCF27E0E48800BA6D4C /* FoodWasteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteApp.swift; sourceTree = "<group>"; };
+		88006FD127E0E48800BA6D4C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88006FD327E0E48B00BA6D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		88006FD627E0E48B00BA6D4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88006FDC27E0E48B00BA6D4C /* FoodWasteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodWasteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88006FE027E0E48B00BA6D4C /* FoodWasteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteTests.swift; sourceTree = "<group>"; };
+		88006FE627E0E48B00BA6D4C /* FoodWasteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodWasteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITests.swift; sourceTree = "<group>"; };
+		88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88006F9027E0DE3E00BA6D4C /* Frameworks */ = {
+		88006FC927E0E48800BA6D4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88006FA027E0DE4300BA6D4C /* Frameworks */ = {
+		88006FD927E0E48B00BA6D4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88006FAA27E0DE4300BA6D4C /* Frameworks */ = {
+		88006FE327E0E48B00BA6D4C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -71,166 +71,166 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88006F8A27E0DE3D00BA6D4C = {
+		88006FC327E0E48700BA6D4C = {
 			isa = PBXGroup;
 			children = (
-				88006F9527E0DE3E00BA6D4C /* Food waste calculator */,
-				88006FA627E0DE4300BA6D4C /* Food waste calculatorTests */,
-				88006FB027E0DE4300BA6D4C /* Food waste calculatorUITests */,
-				88006F9427E0DE3E00BA6D4C /* Products */,
+				88006FCE27E0E48800BA6D4C /* FoodWaste */,
+				88006FDF27E0E48B00BA6D4C /* FoodWasteTests */,
+				88006FE927E0E48B00BA6D4C /* FoodWasteUITests */,
+				88006FCD27E0E48800BA6D4C /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88006F9427E0DE3E00BA6D4C /* Products */ = {
+		88006FCD27E0E48800BA6D4C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88006F9327E0DE3E00BA6D4C /* Food waste calculator.app */,
-				88006FA327E0DE4300BA6D4C /* Food waste calculatorTests.xctest */,
-				88006FAD27E0DE4300BA6D4C /* Food waste calculatorUITests.xctest */,
+				88006FCC27E0E48800BA6D4C /* FoodWaste.app */,
+				88006FDC27E0E48B00BA6D4C /* FoodWasteTests.xctest */,
+				88006FE627E0E48B00BA6D4C /* FoodWasteUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88006F9527E0DE3E00BA6D4C /* Food waste calculator */ = {
+		88006FCE27E0E48800BA6D4C /* FoodWaste */ = {
 			isa = PBXGroup;
 			children = (
-				88006FC227E0DF6900BA6D4C /* Models */,
-				88006FC127E0DF2300BA6D4C /* Views */,
-				88006FC027E0DEDE00BA6D4C /* App */,
-				88006F9C27E0DE4300BA6D4C /* Preview Content */,
+				88006FFC27E0E53800BA6D4C /* Views */,
+				88006FFB27E0E52400BA6D4C /* Models */,
+				88006FFA27E0E51A00BA6D4C /* App */,
+				88006FD527E0E48B00BA6D4C /* Preview Content */,
 			);
-			path = "Food waste calculator";
+			path = FoodWaste;
 			sourceTree = "<group>";
 		};
-		88006F9C27E0DE4300BA6D4C /* Preview Content */ = {
+		88006FD527E0E48B00BA6D4C /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				88006F9D27E0DE4300BA6D4C /* Preview Assets.xcassets */,
+				88006FD627E0E48B00BA6D4C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		88006FA627E0DE4300BA6D4C /* Food waste calculatorTests */ = {
+		88006FDF27E0E48B00BA6D4C /* FoodWasteTests */ = {
 			isa = PBXGroup;
 			children = (
-				88006FA727E0DE4300BA6D4C /* Food_waste_calculatorTests.swift */,
+				88006FE027E0E48B00BA6D4C /* FoodWasteTests.swift */,
 			);
-			path = "Food waste calculatorTests";
+			path = FoodWasteTests;
 			sourceTree = "<group>";
 		};
-		88006FB027E0DE4300BA6D4C /* Food waste calculatorUITests */ = {
+		88006FE927E0E48B00BA6D4C /* FoodWasteUITests */ = {
 			isa = PBXGroup;
 			children = (
-				88006FB127E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift */,
-				88006FB327E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift */,
+				88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */,
+				88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */,
 			);
-			path = "Food waste calculatorUITests";
+			path = FoodWasteUITests;
 			sourceTree = "<group>";
 		};
-		88006FC027E0DEDE00BA6D4C /* App */ = {
+		88006FFA27E0E51A00BA6D4C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				88006F9627E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift */,
-				88006F9A27E0DE4300BA6D4C /* Assets.xcassets */,
+				88006FD327E0E48B00BA6D4C /* Assets.xcassets */,
+				88006FCF27E0E48800BA6D4C /* FoodWasteApp.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
 		};
-		88006FC127E0DF2300BA6D4C /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				88006F9827E0DE3E00BA6D4C /* ContentView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
-		88006FC227E0DF6900BA6D4C /* Models */ = {
+		88006FFB27E0E52400BA6D4C /* Models */ = {
 			isa = PBXGroup;
 			children = (
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
+		88006FFC27E0E53800BA6D4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				88006FD127E0E48800BA6D4C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		88006F9227E0DE3E00BA6D4C /* Food waste calculator */ = {
+		88006FCB27E0E48800BA6D4C /* FoodWaste */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88006FB727E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculator" */;
+			buildConfigurationList = 88006FF027E0E48B00BA6D4C /* Build configuration list for PBXNativeTarget "FoodWaste" */;
 			buildPhases = (
-				88006F8F27E0DE3E00BA6D4C /* Sources */,
-				88006F9027E0DE3E00BA6D4C /* Frameworks */,
-				88006F9127E0DE3E00BA6D4C /* Resources */,
+				88006FC827E0E48800BA6D4C /* Sources */,
+				88006FC927E0E48800BA6D4C /* Frameworks */,
+				88006FCA27E0E48800BA6D4C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Food waste calculator";
-			productName = "Food waste calculator";
-			productReference = 88006F9327E0DE3E00BA6D4C /* Food waste calculator.app */;
+			name = FoodWaste;
+			productName = FoodWaste;
+			productReference = 88006FCC27E0E48800BA6D4C /* FoodWaste.app */;
 			productType = "com.apple.product-type.application";
 		};
-		88006FA227E0DE4300BA6D4C /* Food waste calculatorTests */ = {
+		88006FDB27E0E48B00BA6D4C /* FoodWasteTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88006FBA27E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculatorTests" */;
+			buildConfigurationList = 88006FF327E0E48B00BA6D4C /* Build configuration list for PBXNativeTarget "FoodWasteTests" */;
 			buildPhases = (
-				88006F9F27E0DE4300BA6D4C /* Sources */,
-				88006FA027E0DE4300BA6D4C /* Frameworks */,
-				88006FA127E0DE4300BA6D4C /* Resources */,
+				88006FD827E0E48B00BA6D4C /* Sources */,
+				88006FD927E0E48B00BA6D4C /* Frameworks */,
+				88006FDA27E0E48B00BA6D4C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				88006FA527E0DE4300BA6D4C /* PBXTargetDependency */,
+				88006FDE27E0E48B00BA6D4C /* PBXTargetDependency */,
 			);
-			name = "Food waste calculatorTests";
-			productName = "Food waste calculatorTests";
-			productReference = 88006FA327E0DE4300BA6D4C /* Food waste calculatorTests.xctest */;
+			name = FoodWasteTests;
+			productName = FoodWasteTests;
+			productReference = 88006FDC27E0E48B00BA6D4C /* FoodWasteTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		88006FAC27E0DE4300BA6D4C /* Food waste calculatorUITests */ = {
+		88006FE527E0E48B00BA6D4C /* FoodWasteUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88006FBD27E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculatorUITests" */;
+			buildConfigurationList = 88006FF627E0E48B00BA6D4C /* Build configuration list for PBXNativeTarget "FoodWasteUITests" */;
 			buildPhases = (
-				88006FA927E0DE4300BA6D4C /* Sources */,
-				88006FAA27E0DE4300BA6D4C /* Frameworks */,
-				88006FAB27E0DE4300BA6D4C /* Resources */,
+				88006FE227E0E48B00BA6D4C /* Sources */,
+				88006FE327E0E48B00BA6D4C /* Frameworks */,
+				88006FE427E0E48B00BA6D4C /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				88006FAF27E0DE4300BA6D4C /* PBXTargetDependency */,
+				88006FE827E0E48B00BA6D4C /* PBXTargetDependency */,
 			);
-			name = "Food waste calculatorUITests";
-			productName = "Food waste calculatorUITests";
-			productReference = 88006FAD27E0DE4300BA6D4C /* Food waste calculatorUITests.xctest */;
+			name = FoodWasteUITests;
+			productName = FoodWasteUITests;
+			productReference = 88006FE627E0E48B00BA6D4C /* FoodWasteUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88006F8B27E0DE3D00BA6D4C /* Project object */ = {
+		88006FC427E0E48700BA6D4C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1320;
 				LastUpgradeCheck = 1320;
 				TargetAttributes = {
-					88006F9227E0DE3E00BA6D4C = {
+					88006FCB27E0E48800BA6D4C = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					88006FA227E0DE4300BA6D4C = {
+					88006FDB27E0E48B00BA6D4C = {
 						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 88006F9227E0DE3E00BA6D4C;
+						TestTargetID = 88006FCB27E0E48800BA6D4C;
 					};
-					88006FAC27E0DE4300BA6D4C = {
+					88006FE527E0E48B00BA6D4C = {
 						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = 88006F9227E0DE3E00BA6D4C;
+						TestTargetID = 88006FCB27E0E48800BA6D4C;
 					};
 				};
 			};
-			buildConfigurationList = 88006F8E27E0DE3E00BA6D4C /* Build configuration list for PBXProject "Food waste calculator" */;
+			buildConfigurationList = 88006FC727E0E48800BA6D4C /* Build configuration list for PBXProject "FoodWaste" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -238,36 +238,36 @@
 				en,
 				Base,
 			);
-			mainGroup = 88006F8A27E0DE3D00BA6D4C;
-			productRefGroup = 88006F9427E0DE3E00BA6D4C /* Products */;
+			mainGroup = 88006FC327E0E48700BA6D4C;
+			productRefGroup = 88006FCD27E0E48800BA6D4C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88006F9227E0DE3E00BA6D4C /* Food waste calculator */,
-				88006FA227E0DE4300BA6D4C /* Food waste calculatorTests */,
-				88006FAC27E0DE4300BA6D4C /* Food waste calculatorUITests */,
+				88006FCB27E0E48800BA6D4C /* FoodWaste */,
+				88006FDB27E0E48B00BA6D4C /* FoodWasteTests */,
+				88006FE527E0E48B00BA6D4C /* FoodWasteUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		88006F9127E0DE3E00BA6D4C /* Resources */ = {
+		88006FCA27E0E48800BA6D4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88006F9E27E0DE4300BA6D4C /* Preview Assets.xcassets in Resources */,
-				88006F9B27E0DE4300BA6D4C /* Assets.xcassets in Resources */,
+				88006FD727E0E48B00BA6D4C /* Preview Assets.xcassets in Resources */,
+				88006FD427E0E48B00BA6D4C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88006FA127E0DE4300BA6D4C /* Resources */ = {
+		88006FDA27E0E48B00BA6D4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88006FAB27E0DE4300BA6D4C /* Resources */ = {
+		88006FE427E0E48B00BA6D4C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,49 +277,49 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88006F8F27E0DE3E00BA6D4C /* Sources */ = {
+		88006FC827E0E48800BA6D4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88006F9927E0DE3E00BA6D4C /* ContentView.swift in Sources */,
-				88006F9727E0DE3E00BA6D4C /* FoodWasteCalculatorApp.swift in Sources */,
+				88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */,
+				88006FD027E0E48800BA6D4C /* FoodWasteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88006F9F27E0DE4300BA6D4C /* Sources */ = {
+		88006FD827E0E48B00BA6D4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88006FA827E0DE4300BA6D4C /* Food_waste_calculatorTests.swift in Sources */,
+				88006FE127E0E48B00BA6D4C /* FoodWasteTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88006FA927E0DE4300BA6D4C /* Sources */ = {
+		88006FE227E0E48B00BA6D4C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88006FB227E0DE4300BA6D4C /* Food_waste_calculatorUITests.swift in Sources */,
-				88006FB427E0DE4300BA6D4C /* Food_waste_calculatorUITestsLaunchTests.swift in Sources */,
+				88006FEB27E0E48B00BA6D4C /* FoodWasteUITests.swift in Sources */,
+				88006FED27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		88006FA527E0DE4300BA6D4C /* PBXTargetDependency */ = {
+		88006FDE27E0E48B00BA6D4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 88006F9227E0DE3E00BA6D4C /* Food waste calculator */;
-			targetProxy = 88006FA427E0DE4300BA6D4C /* PBXContainerItemProxy */;
+			target = 88006FCB27E0E48800BA6D4C /* FoodWaste */;
+			targetProxy = 88006FDD27E0E48B00BA6D4C /* PBXContainerItemProxy */;
 		};
-		88006FAF27E0DE4300BA6D4C /* PBXTargetDependency */ = {
+		88006FE827E0E48B00BA6D4C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 88006F9227E0DE3E00BA6D4C /* Food waste calculator */;
-			targetProxy = 88006FAE27E0DE4300BA6D4C /* PBXContainerItemProxy */;
+			target = 88006FCB27E0E48800BA6D4C /* FoodWaste */;
+			targetProxy = 88006FE727E0E48B00BA6D4C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		88006FB527E0DE4300BA6D4C /* Debug */ = {
+		88006FEE27E0E48B00BA6D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -380,7 +380,7 @@
 			};
 			name = Debug;
 		};
-		88006FB627E0DE4300BA6D4C /* Release */ = {
+		88006FEF27E0E48B00BA6D4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -435,14 +435,14 @@
 			};
 			name = Release;
 		};
-		88006FB827E0DE4300BA6D4C /* Debug */ = {
+		88006FF127E0E48B00BA6D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Food waste calculator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FoodWaste/Preview Content\"";
 				DEVELOPMENT_TEAM = MHBEW6TVG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -456,7 +456,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.FoodWaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -464,14 +464,14 @@
 			};
 			name = Debug;
 		};
-		88006FB927E0DE4300BA6D4C /* Release */ = {
+		88006FF227E0E48B00BA6D4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Food waste calculator/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"FoodWaste/Preview Content\"";
 				DEVELOPMENT_TEAM = MHBEW6TVG2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -485,7 +485,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculator";
+				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.FoodWaste;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -493,7 +493,7 @@
 			};
 			name = Release;
 		};
-		88006FBB27E0DE4300BA6D4C /* Debug */ = {
+		88006FF427E0E48B00BA6D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -504,16 +504,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculatorTests";
+				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.FoodWasteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food waste calculator.app/Food waste calculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodWaste.app/FoodWaste";
 			};
 			name = Debug;
 		};
-		88006FBC27E0DE4300BA6D4C /* Release */ = {
+		88006FF527E0E48B00BA6D4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -524,16 +524,16 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculatorTests";
+				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.FoodWasteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Food waste calculator.app/Food waste calculator";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodWaste.app/FoodWaste";
 			};
 			name = Release;
 		};
-		88006FBE27E0DE4300BA6D4C /* Debug */ = {
+		88006FF727E0E48B00BA6D4C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -542,16 +542,16 @@
 				DEVELOPMENT_TEAM = MHBEW6TVG2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculatorUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.FoodWasteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Food waste calculator";
+				TEST_TARGET_NAME = FoodWaste;
 			};
 			name = Debug;
 		};
-		88006FBF27E0DE4300BA6D4C /* Release */ = {
+		88006FF827E0E48B00BA6D4C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
@@ -560,55 +560,55 @@
 				DEVELOPMENT_TEAM = MHBEW6TVG2;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "se.helsingborg.Food-waste-calculatorUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.FoodWasteUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Food waste calculator";
+				TEST_TARGET_NAME = FoodWaste;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88006F8E27E0DE3E00BA6D4C /* Build configuration list for PBXProject "Food waste calculator" */ = {
+		88006FC727E0E48800BA6D4C /* Build configuration list for PBXProject "FoodWaste" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88006FB527E0DE4300BA6D4C /* Debug */,
-				88006FB627E0DE4300BA6D4C /* Release */,
+				88006FEE27E0E48B00BA6D4C /* Debug */,
+				88006FEF27E0E48B00BA6D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88006FB727E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculator" */ = {
+		88006FF027E0E48B00BA6D4C /* Build configuration list for PBXNativeTarget "FoodWaste" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88006FB827E0DE4300BA6D4C /* Debug */,
-				88006FB927E0DE4300BA6D4C /* Release */,
+				88006FF127E0E48B00BA6D4C /* Debug */,
+				88006FF227E0E48B00BA6D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88006FBA27E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculatorTests" */ = {
+		88006FF327E0E48B00BA6D4C /* Build configuration list for PBXNativeTarget "FoodWasteTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88006FBB27E0DE4300BA6D4C /* Debug */,
-				88006FBC27E0DE4300BA6D4C /* Release */,
+				88006FF427E0E48B00BA6D4C /* Debug */,
+				88006FF527E0E48B00BA6D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88006FBD27E0DE4300BA6D4C /* Build configuration list for PBXNativeTarget "Food waste calculatorUITests" */ = {
+		88006FF627E0E48B00BA6D4C /* Build configuration list for PBXNativeTarget "FoodWasteUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88006FBE27E0DE4300BA6D4C /* Debug */,
-				88006FBF27E0DE4300BA6D4C /* Release */,
+				88006FF727E0E48B00BA6D4C /* Debug */,
+				88006FF827E0E48B00BA6D4C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 88006F8B27E0DE3D00BA6D4C /* Project object */;
+	rootObject = 88006FC427E0E48700BA6D4C /* Project object */;
 }

@@ -1,14 +1,14 @@
 //
-//  Food_waste_calculatorTests.swift
-//  Food waste calculatorTests
+//  FoodWasteTests.swift
+//  FoodWasteTests
 //
 //  Created by Jonatan Hanson on 2022-03-15.
 //
 
 import XCTest
-@testable import Food_waste_calculator
+@testable import FoodWaste
 
-class Food_waste_calculatorTests: XCTestCase {
+class FoodWasteTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
