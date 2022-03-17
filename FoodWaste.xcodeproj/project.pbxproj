@@ -15,6 +15,7 @@
 		88006FEB27E0E48B00BA6D4C /* FoodWasteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */; };
 		88006FED27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */; };
 		88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */; };
+		8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,7 @@
 		88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITests.swift; sourceTree = "<group>"; };
 		88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			children = (
 				88006FD127E0E48800BA6D4C /* ContentView.swift */,
 				88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */,
+				88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 			files = (
 				88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */,
 				88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */,
+				8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */,
 				88006FD027E0E48800BA6D4C /* FoodWasteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

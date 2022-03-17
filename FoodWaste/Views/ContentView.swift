@@ -11,8 +11,9 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            Text("Hello, world!")
-                .padding()
+            
+            ChatBubbleView(content: "Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
+                .offset(x: 130, y: -60)
         }
     }
 }
