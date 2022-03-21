@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {c
+struct ContentView: View {
     @StateObject var navigation = Navigation()
 
     var body: some View {
