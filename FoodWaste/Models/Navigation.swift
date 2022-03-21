@@ -9,16 +9,14 @@ import Foundation
 
 class Navigation: ObservableObject {
     @Published var step = 0
-
+    
     func next() {
         step += 1
     }
     
-    
     func previous() {
         step -= 1
     }
-    
     
     func reset() {
         step = 0

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @StateObject var navigation = Navigation()
-
+    
     var body: some View {
         ZStack {
             BackgroundView()

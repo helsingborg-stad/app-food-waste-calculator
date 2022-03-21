@@ -13,8 +13,9 @@ func CreateStepView(step: Int) -> some View {
         AnyView(Step2()),
         AnyView(Step3())
     ]
-
-    return StepViewsList[step]
+    let indexExist = StepViewsList.indices.contains(step)
+    
+    return indexExist ? StepViewsList[step] : AnyView(EmptyView())
 }
 
 struct Step1: View {
