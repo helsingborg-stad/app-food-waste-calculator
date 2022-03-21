@@ -7,14 +7,15 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView: View {c
+    @StateObject var navigation = Navigation()
+
     var body: some View {
         ZStack {
             BackgroundView()
-            
-            ChatBubbleView(content: "Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
-                .offset(x: 130, y: -60)
+            CreateStepView(step: navigation.step)
         }
+        .environmentObject(navigation)
     }
 }
 

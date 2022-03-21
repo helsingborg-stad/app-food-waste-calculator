@@ -7,21 +7,22 @@
 
 import SwiftUI
 
-struct ChatBubbleView: View {
-    var content: String
+struct ChatBubbleView<Content: View>: View {
+    let content: Content
+    
+    init(@ViewBuilder content: () -> Content) {
+        self.content = content()
+    }
+    
     var body: some View {
         VStack() {
-            Text(content)
-                .bold()
-                .font(.title)
-                .foregroundColor(.white)
+            self.content
         }
         .padding(30)
         .padding(.bottom, 25)
         .background(Color("ChatBubbleColor"))
         .clipShape(Bubble())
-        .frame(maxWidth: 500)
-        
+        .frame(maxWidth: 450)
     }
 }
 
@@ -53,9 +54,17 @@ struct Bubble: Shape {
 
 struct ChatBubbleView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatBubbleView(content: "Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
-        ChatBubbleView(content: "Yo!")
-
+        ChatBubbleView{Text("Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
+                .bold()
+                .font(.title)
+                .foregroundColor(.white)
+        }
+        ChatBubbleView{
+            Text("Yo!")
+                .bold()
+                .font(.title)
+                .foregroundColor(.white)
+        }
     }
 }
 
