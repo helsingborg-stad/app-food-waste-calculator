@@ -14,6 +14,8 @@
 		88006FE127E0E48B00BA6D4C /* FoodWasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FE027E0E48B00BA6D4C /* FoodWasteTests.swift */; };
 		88006FEB27E0E48B00BA6D4C /* FoodWasteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */; };
 		88006FED27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */; };
+		88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */; };
+		8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		88006FE627E0E48B00BA6D4C /* FoodWasteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodWasteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITests.swift; sourceTree = "<group>"; };
 		88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +98,10 @@
 		88006FCE27E0E48800BA6D4C /* FoodWaste */ = {
 			isa = PBXGroup;
 			children = (
-				88006FFC27E0E53800BA6D4C /* Views */,
-				88006FFB27E0E52400BA6D4C /* Models */,
 				88006FFA27E0E51A00BA6D4C /* App */,
+				88006FFB27E0E52400BA6D4C /* Models */,
 				88006FD527E0E48B00BA6D4C /* Preview Content */,
+				88006FFC27E0E53800BA6D4C /* Views */,
 			);
 			path = FoodWaste;
 			sourceTree = "<group>";
@@ -147,6 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				88006FD127E0E48800BA6D4C /* ContentView.swift */,
+				88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */,
+				88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -281,7 +287,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */,
 				88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */,
+				8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */,
 				88006FD027E0E48800BA6D4C /* FoodWasteApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
