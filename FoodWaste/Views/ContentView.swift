@@ -13,11 +13,16 @@ struct ContentView: View {
     var body: some View {
         ZStack {
             BackgroundView()
-            CreateStepView(step: navigation.step)
+            navigation.getCurrentStep(views: StepsList)
         }
         .environmentObject(navigation)
     }
 }
+
+let StepsList: [AnyView] = [
+    AnyView(Step1()),
+    AnyView(Step2()),
+]
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {

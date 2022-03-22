@@ -11,15 +11,18 @@
 		88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FD127E0E48800BA6D4C /* ContentView.swift */; };
 		88006FD427E0E48B00BA6D4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88006FD327E0E48B00BA6D4C /* Assets.xcassets */; };
 		88006FD727E0E48B00BA6D4C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88006FD627E0E48B00BA6D4C /* Preview Assets.xcassets */; };
-		88006FE127E0E48B00BA6D4C /* FoodWasteTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FE027E0E48B00BA6D4C /* FoodWasteTests.swift */; };
 		88006FEB27E0E48B00BA6D4C /* FoodWasteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */; };
 		88006FED27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */; };
 		88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */; };
 		8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */; };
+		88C5E4AE27E9F26400D4D68F /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5E4AD27E9F26400D4D68F /* NavigationTests.swift */; };
 		88C8E8D927E47EBE0030C13A /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8D827E47EBE0030C13A /* Navigation.swift */; };
 		88C8E8DC27E48F6B0030C13A /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8DB27E48F6B0030C13A /* ButtonViews.swift */; };
 		88C8E8DE27E496AB0030C13A /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8DD27E496AB0030C13A /* TextViews.swift */; };
-		88C8E8E027E4C0DE0030C13A /* StepsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8DF27E4C0DD0030C13A /* StepsView.swift */; };
+		88C8E8E527E9CD640030C13A /* Step1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8E427E9CD640030C13A /* Step1.swift */; };
+		88C8E8E727E9CD830030C13A /* Step2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8E627E9CD830030C13A /* Step2.swift */; };
+		88C8E8E927E9CEAD0030C13A /* Step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8E827E9CEAD0030C13A /* Step3.swift */; };
+		88C8E8EB27E9CECF0030C13A /* Step4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8EA27E9CECF0030C13A /* Step4.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,16 +49,19 @@
 		88006FD327E0E48B00BA6D4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88006FD627E0E48B00BA6D4C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88006FDC27E0E48B00BA6D4C /* FoodWasteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodWasteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88006FE027E0E48B00BA6D4C /* FoodWasteTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteTests.swift; sourceTree = "<group>"; };
 		88006FE627E0E48B00BA6D4C /* FoodWasteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FoodWasteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88006FEA27E0E48B00BA6D4C /* FoodWasteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITests.swift; sourceTree = "<group>"; };
 		88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
+		88C5E4AD27E9F26400D4D68F /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
 		88C8E8D827E47EBE0030C13A /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		88C8E8DB27E48F6B0030C13A /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
 		88C8E8DD27E496AB0030C13A /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
-		88C8E8DF27E4C0DD0030C13A /* StepsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StepsView.swift; sourceTree = "<group>"; };
+		88C8E8E427E9CD640030C13A /* Step1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step1.swift; sourceTree = "<group>"; };
+		88C8E8E627E9CD830030C13A /* Step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2.swift; sourceTree = "<group>"; };
+		88C8E8E827E9CEAD0030C13A /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
+		88C8E8EA27E9CECF0030C13A /* Step4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -125,7 +131,7 @@
 		88006FDF27E0E48B00BA6D4C /* FoodWasteTests */ = {
 			isa = PBXGroup;
 			children = (
-				88006FE027E0E48B00BA6D4C /* FoodWasteTests.swift */,
+				88C5E4AD27E9F26400D4D68F /* NavigationTests.swift */,
 			);
 			path = FoodWasteTests;
 			sourceTree = "<group>";
@@ -159,14 +165,25 @@
 		88006FFC27E0E53800BA6D4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				88C8E8E327E9CD130030C13A /* Steps */,
 				88006FD127E0E48800BA6D4C /* ContentView.swift */,
 				88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */,
 				88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */,
 				88C8E8DB27E48F6B0030C13A /* ButtonViews.swift */,
 				88C8E8DD27E496AB0030C13A /* TextViews.swift */,
-				88C8E8DF27E4C0DD0030C13A /* StepsView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		88C8E8E327E9CD130030C13A /* Steps */ = {
+			isa = PBXGroup;
+			children = (
+				88C8E8E427E9CD640030C13A /* Step1.swift */,
+				88C8E8E627E9CD830030C13A /* Step2.swift */,
+				88C8E8E827E9CEAD0030C13A /* Step3.swift */,
+				88C8E8EA27E9CECF0030C13A /* Step4.swift */,
+			);
+			path = Steps;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,6 +257,7 @@
 					};
 					88006FDB27E0E48B00BA6D4C = {
 						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = 88006FCB27E0E48800BA6D4C;
 					};
 					88006FE527E0E48B00BA6D4C = {
@@ -303,8 +321,11 @@
 				88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */,
 				88C8E8DC27E48F6B0030C13A /* ButtonViews.swift in Sources */,
 				88C8E8D927E47EBE0030C13A /* Navigation.swift in Sources */,
-				88C8E8E027E4C0DE0030C13A /* StepsView.swift in Sources */,
+				88C8E8E927E9CEAD0030C13A /* Step3.swift in Sources */,
+				88C8E8E727E9CD830030C13A /* Step2.swift in Sources */,
 				8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */,
+				88C8E8EB27E9CECF0030C13A /* Step4.swift in Sources */,
+				88C8E8E527E9CD640030C13A /* Step1.swift in Sources */,
 				88C8E8DE27E496AB0030C13A /* TextViews.swift in Sources */,
 				88006FD027E0E48800BA6D4C /* FoodWasteApp.swift in Sources */,
 			);
@@ -314,7 +335,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88006FE127E0E48B00BA6D4C /* FoodWasteTests.swift in Sources */,
+				88C5E4AE27E9F26400D4D68F /* NavigationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -522,15 +543,22 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MHBEW6TVG2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.FoodWasteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FoodWaste.app/FoodWaste";
@@ -542,11 +570,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = MHBEW6TVG2;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = se.helsingborg.FoodWasteTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

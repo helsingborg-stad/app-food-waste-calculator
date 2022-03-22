@@ -20,7 +20,6 @@ struct BackgroundView: View {
             VStack{
                 HStack{
                     Spacer()
-
                     if (navigation.step > 0) {
                         ResetButton(action: {navigation.reset()})
                         .offset(x: -70, y: 15)
