@@ -23,6 +23,15 @@
 		88C8E8E727E9CD830030C13A /* Step2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8E627E9CD830030C13A /* Step2.swift */; };
 		88C8E8E927E9CEAD0030C13A /* Step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8E827E9CEAD0030C13A /* Step3.swift */; };
 		88C8E8EB27E9CECF0030C13A /* Step4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8EA27E9CECF0030C13A /* Step4.swift */; };
+		F6318ED327E1D9E000F9BE03 /* RoundeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED227E1D9E000F9BE03 /* RoundeViews.swift */; };
+		F6318ED827E488A300F9BE03 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED727E488A300F9BE03 /* CalculatorView.swift */; };
+		F6318EDA27E488D100F9BE03 /* CalculatorFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED927E488D100F9BE03 /* CalculatorFaceView.swift */; };
+		F6318EDC27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */; };
+		F6318EDE27E488FE00F9BE03 /* CalculatorKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */; };
+		F6318EE027E48DDB00F9BE03 /* KeyboardWastParamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */; };
+		F6318EE227E48DFC00F9BE03 /* KeyboardFunctionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */; };
+		F6318EE427E4A0D200F9BE03 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EE327E4A0D200F9BE03 /* Game.swift */; };
+		F6596B4627E8A7F000F31A3D /* WasteParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6596B4527E8A7F000F31A3D /* WasteParameter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +71,15 @@
 		88C8E8E627E9CD830030C13A /* Step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2.swift; sourceTree = "<group>"; };
 		88C8E8E827E9CEAD0030C13A /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
 		88C8E8EA27E9CECF0030C13A /* Step4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4.swift; sourceTree = "<group>"; };
+		F6318ED227E1D9E000F9BE03 /* RoundeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundeViews.swift; sourceTree = "<group>"; };
+		F6318ED727E488A300F9BE03 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
+		F6318ED927E488D100F9BE03 /* CalculatorFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorFaceView.swift; sourceTree = "<group>"; };
+		F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorDisplayOutputView.swift; sourceTree = "<group>"; };
+		F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorKeyboardView.swift; sourceTree = "<group>"; };
+		F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardWastParamsView.swift; sourceTree = "<group>"; };
+		F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFunctionsView.swift; sourceTree = "<group>"; };
+		F6318EE327E4A0D200F9BE03 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = SOURCE_ROOT; };
+		F6596B4527E8A7F000F31A3D /* WasteParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteParameter.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				88C8E8D827E47EBE0030C13A /* Navigation.swift */,
+				F6318EE327E4A0D200F9BE03 /* Game.swift */,
+				F6596B4527E8A7F000F31A3D /* WasteParameter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -166,6 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				88C8E8E327E9CD130030C13A /* Steps */,
+				F6318ED627E4883200F9BE03 /* Calculator */,
 				88006FD127E0E48800BA6D4C /* ContentView.swift */,
 				88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */,
 				88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */,
@@ -184,6 +205,18 @@
 				88C8E8EA27E9CECF0030C13A /* Step4.swift */,
 			);
 			path = Steps;
+		F6318ED627E4883200F9BE03 /* Calculator */ = {
+			isa = PBXGroup;
+			children = (
+				F6318ED227E1D9E000F9BE03 /* RoundeViews.swift */,
+				F6318ED727E488A300F9BE03 /* CalculatorView.swift */,
+				F6318ED927E488D100F9BE03 /* CalculatorFaceView.swift */,
+				F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */,
+				F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */,
+				F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */,
+				F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */,
+			);
+			path = Calculator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,7 +360,17 @@
 				88C8E8EB27E9CECF0030C13A /* Step4.swift in Sources */,
 				88C8E8E527E9CD640030C13A /* Step1.swift in Sources */,
 				88C8E8DE27E496AB0030C13A /* TextViews.swift in Sources */,
+				F6318ED327E1D9E000F9BE03 /* RoundeViews.swift in Sources */,
+				F6318ED827E488A300F9BE03 /* CalculatorView.swift in Sources */,
+				88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */,
+				F6318EDA27E488D100F9BE03 /* CalculatorFaceView.swift in Sources */,
+				F6318EDE27E488FE00F9BE03 /* CalculatorKeyboardView.swift in Sources */,
+				F6318EE427E4A0D200F9BE03 /* Game.swift in Sources */,
 				88006FD027E0E48800BA6D4C /* FoodWasteApp.swift in Sources */,
+				F6318EE227E48DFC00F9BE03 /* KeyboardFunctionsView.swift in Sources */,
+				F6318EDC27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift in Sources */,
+				F6596B4627E8A7F000F31A3D /* WasteParameter.swift in Sources */,
+				F6318EE027E48DDB00F9BE03 /* KeyboardWastParamsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

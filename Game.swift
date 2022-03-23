@@ -1,0 +1,37 @@
+//
+//  Game.swift
+//  FoodWaste
+//
+//  Created by Ehsan Zilaei on 2022-03-18.
+//
+
+import Foundation
+
+struct Game {
+    var wasteScore: [WasteParameter] = []
+    var wasteResult: String = "Å nej, det blir 48 g/elev matsvinn!"
+    
+    init(loadTestData: Bool = false) {
+        if (loadTestData) {
+            wasteScore.append(WasteParameter.gazpacho)
+        }
+    }
+    
+    mutating func addWasteScore(waste: WasteParameter) {
+        wasteScore.append(waste)
+    }
+    
+    mutating func resetWasteScore() {
+        wasteScore.removeAll()
+    }
+    
+    func sumWasteScore() -> Int {
+        var sumImpact = 0
+        
+        wasteScore.forEach { waste in
+            sumImpact += waste.impact
+        }
+        
+        return sumImpact
+    }
+}

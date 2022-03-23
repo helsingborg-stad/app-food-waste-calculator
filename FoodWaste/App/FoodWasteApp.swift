@@ -11,7 +11,8 @@ import SwiftUI
 struct FoodWasteApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+//            ContentView()
+            CalculatorView()
         }
     }
 }
