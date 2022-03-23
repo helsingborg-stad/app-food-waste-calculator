@@ -8,12 +8,25 @@
 import SwiftUI
 
 struct BackgroundView: View {
+    @EnvironmentObject var navigation: Navigation
+    
     var body: some View {
         ZStack {
             Image("background")
                 .resizable()
                 .scaledToFill()
                 .ignoresSafeArea()
+
+            VStack{
+                HStack{
+                    Spacer()
+                    if (navigation.step > 0) {
+                        ResetButton(action: {navigation.reset()})
+                        .offset(x: -70, y: 15)
+                    }
+                }
+                Spacer()
+            }
         }
     }
 }
@@ -21,8 +34,6 @@ struct BackgroundView: View {
 struct BackgroundView_Previews: PreviewProvider {
     static var previews: some View {
         BackgroundView()
-            .previewInterfaceOrientation(.landscapeLeft)
-        
-        BackgroundView()
+            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation())
     }
 }

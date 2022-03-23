@@ -8,15 +8,21 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var navigation = Navigation()
+    
     var body: some View {
         ZStack {
             BackgroundView()
-            
-            ChatBubbleView(content: "Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
-                .offset(x: 130, y: -60)
+            navigation.getCurrentStep(views: StepsList)
         }
+        .environmentObject(navigation)
     }
 }
+
+let StepsList: [AnyView] = [
+    AnyView(Step1()),
+    AnyView(Step2()),
+]
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
