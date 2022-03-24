@@ -10,18 +10,22 @@ import SwiftUI
 struct Step1: View {
     @EnvironmentObject var navigation: Navigation
     var body: some View {
-        ChatBubbleView {
-            ChatBubbleText(text: "Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
-            HStack {
-                Spacer()
-                ForwardButton(action: {navigation.next()})
+        GeometryReader { geo in
+            ChatBubbleView {
+                ChatBubbleText(text: "Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
+                HStack {
+                    Spacer()
+                    ForwardButton(action: { navigation.next() })
+                }
             }
-        }.offset(x: 130, y: -60)
+            .offset(x: geo.size.width * 0.45, y: geo.size.height * 0.21)
+        }
     }
 }
 
 struct Step1_Previews: PreviewProvider {
     static var previews: some View {
         Step1()
+            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation())
     }
 }

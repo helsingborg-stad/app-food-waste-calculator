@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct Step3: View {
-    @EnvironmentObject var navigation: Navigation
     var body: some View {
-        ChatBubbleView {
-            ChatBubbleText(text: "Step 3")
-            HStack {
-                Spacer()
-                ForwardButton(action: {navigation.next()})
-            }
+        GeometryReader { geo in
+            TabletView()
+                .frame(width: 450, height: 600)
+                .offset(x: geo.size.width * 0.52, y: geo.size.height * 0.17)
         }
     }
 }
@@ -23,5 +20,6 @@ struct Step3: View {
 struct Step3_Previews: PreviewProvider {
     static var previews: some View {
         Step3()
+            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation())
     }
 }

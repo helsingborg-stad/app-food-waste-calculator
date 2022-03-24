@@ -10,12 +10,15 @@ import SwiftUI
 struct Step2: View {
     @EnvironmentObject var navigation: Navigation
     var body: some View {
-        ChatBubbleView {
-            ChatBubbleText(text: "Maträtt, ljud, kö och väder påverkar mängden mat som kommer slängas!")
-            HStack {
-                Spacer()
-                ForwardButton(action: {navigation.next()})
+        GeometryReader { geo in
+            ChatBubbleView {
+                ChatBubbleText(text: "Maträtt, ljud, kö och väder påverkar mängden mat som kommer slängas!")
+                HStack {
+                    Spacer()
+                    ForwardButton(action: { navigation.next() })
+                }
             }
+            .offset(x: geo.size.width * 0.45, y: geo.size.height * 0.21)
         }
     }
 }
@@ -23,5 +26,6 @@ struct Step2: View {
 struct Step2_Previews: PreviewProvider {
     static var previews: some View {
         Step2()
+            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation())
     }
 }
