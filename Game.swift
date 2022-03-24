@@ -8,27 +8,26 @@
 import Foundation
 
 struct Game {
-    var wasteScore: [WasteParameter] = []
-    var wasteResult: String = "Å nej, det blir 48 g/elev matsvinn!"
+    var wasteInputs: [WasteParameter] = []
     
     init(loadTestData: Bool = false) {
         if (loadTestData) {
-            wasteScore.append(WasteParameter.gazpacho)
+            wasteInputs.append(WasteParameter.gazpacho)
         }
     }
     
     mutating func handleWasteButton(waste: WasteParameter) {
-        wasteScore.append(waste)
+        wasteInputs.append(waste)
     }
     
     mutating func resetWasteScore() {
-        wasteScore.removeAll()
+        wasteInputs.removeAll()
     }
     
     func sumWasteScore() -> () {
         var sumImpact = 0
         
-        wasteScore.forEach { waste in
+        wasteInputs.forEach { waste in
             sumImpact += waste.impact
         }
         
@@ -38,7 +37,7 @@ struct Game {
     mutating func handleFunctionButton(function: FunctionParameter) {
         switch function {
         case .delete:
-            wasteScore.removeAll()
+            wasteInputs.removeAll()
         case .sum:
             sumWasteScore()
         }

@@ -13,7 +13,7 @@ struct CalculatorView: View {
     var body: some View {
         VStack {
             CalculatorFaceView(images: [])
-            CalculatorDisplayWasteOutputView(wasteScore: $game.wasteScore)
+            CalculatorDisplayWasteOutputView(wasteScore: $game.wasteInputs)
             CalculatorKeyboardView(game: $game)
         }
     }
