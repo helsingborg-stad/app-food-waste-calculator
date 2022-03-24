@@ -40,8 +40,8 @@ struct RoundedWasteButton: View {
     var waste: WasteParameter
     
     var body: some View {
-        let typeSelected = game.wasteScore.contains {$0.type == waste.type}
-        let wasteSelected = game.wasteScore.contains {$0.type == waste.type && $0 != waste}
+        let typeSelected = game.wasteInputs.contains {$0.type == waste.type}
+        let wasteSelected = game.wasteInputs.contains {$0.type == waste.type && $0 != waste}
         
         Button(action: {game.handleWasteButton(waste: waste)}) {
             HStack (alignment: .center) {
@@ -86,7 +86,7 @@ struct RoundedViews_Previews: PreviewProvider {
         ScrollView {
             VStack (spacing: 20) {
                 Text("Displays:")
-                RoundedWasteDisplay(wasteItems: $game.wasteScore, backgroundColor: Color("CalculatorDisplayOutputColor"))
+                RoundedWasteDisplay(wasteItems: $game.wasteInputs, backgroundColor: Color("CalculatorDisplayOutputColor"))
                 Text("Waste Buttons disabled:")
                 RoundedWasteButton(game: $game, waste: .burger)
                 Text("Waste Buttons enabled:")

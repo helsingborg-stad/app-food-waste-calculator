@@ -19,6 +19,6 @@ struct CalculatorDisplayOutputView_Previews: PreviewProvider {
     @State static var game: Game = Game(loadTestData: true)
     
     static var previews: some View {
-        CalculatorDisplayWasteOutputView(wasteScore: $game.wasteScore)
+        CalculatorDisplayWasteOutputView(wasteScore: $game.wasteInputs)
     }
 }
