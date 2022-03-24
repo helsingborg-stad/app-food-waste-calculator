@@ -12,14 +12,13 @@ struct KeyboardFunctionsView: View {
     var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
     
     var body: some View {
-//        LazyVGrid(columns: columns, spacing: 5) {
-//            Group {
-//                RoundedWasteButton(game: $game, waste: .burger)
-//                RoundedWasteButton(game: $game, waste: .gazpacho)
-//                RoundedWasteButton(game: $game, waste: .fish)
-//            }
-//        }
-        Text("Placeholder function keys")
+        LazyVGrid(columns: columns, spacing: 5) {
+            Group {
+                RoundedFunctionButton(game: $game, function: .delete)
+                Spacer()
+                RoundedFunctionButton(game: $game, function: .sum)
+            }
+        }
     }
 }
 
