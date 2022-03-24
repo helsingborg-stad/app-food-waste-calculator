@@ -26,9 +26,9 @@ struct KeyboardWastParamsView: View {
             }
 
             Group {
-                RoundedWasteButton(game: $game, waste: .queue)
-                RoundedWasteButton(game: $game, waste: .queue)
-                RoundedWasteButton(game: $game, waste: .queue)
+                RoundedWasteButton(game: $game, waste: .queueShort)
+                RoundedWasteButton(game: $game, waste: .queueModerate)
+                RoundedWasteButton(game: $game, waste: .queueLong)
             }
 
             Group {
