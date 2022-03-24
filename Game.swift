@@ -17,7 +17,7 @@ struct Game {
         }
     }
     
-    mutating func addWasteScore(waste: WasteParameter) {
+    mutating func handleWasteButton(waste: WasteParameter) {
         wasteScore.append(waste)
     }
     
@@ -25,13 +25,27 @@ struct Game {
         wasteScore.removeAll()
     }
     
-    func sumWasteScore() -> Int {
+    func sumWasteScore() -> () {
         var sumImpact = 0
         
         wasteScore.forEach { waste in
             sumImpact += waste.impact
         }
         
-        return sumImpact
+        print(sumImpact)
+    }
+    
+    mutating func removeLastInput() -> Void {
+        print("pressed some button")
+        wasteScore.removeLast()
+    }
+    
+    mutating func handleFunctionButton(function: FunctionParameter) {
+        switch function {
+        case .delete:
+            wasteScore.removeAll()
+        case .sum:
+            sumWasteScore()
+        }
     }
 }
