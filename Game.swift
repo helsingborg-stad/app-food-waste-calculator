@@ -35,11 +35,6 @@ struct Game {
         print(sumImpact)
     }
     
-    mutating func removeLastInput() -> Void {
-        print("pressed some button")
-        wasteScore.removeLast()
-    }
-    
     mutating func handleFunctionButton(function: FunctionParameter) {
         switch function {
         case .delete:
