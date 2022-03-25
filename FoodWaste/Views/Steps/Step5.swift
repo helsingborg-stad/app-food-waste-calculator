@@ -13,6 +13,9 @@ struct Step5: View {
             ZStack {
                 Image("tabletOn")
                     .resizable()
+                Image("calculatorBackground")
+                    .resizable()
+                    .padding()
                 CalculatorView()
                     .frame(maxWidth: 370, maxHeight: 600)
             }
