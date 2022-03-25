@@ -54,8 +54,8 @@ struct RoundedWasteButton: View {
             .background(Color(waste.type.color))
             .cornerRadius(10)
             .opacity(wasteSelected ? 0.5 : 1)
-            .disabled(typeSelected ? true : false)
         }
+        .disabled(typeSelected ? true : false)
     }
 }
 
