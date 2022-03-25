@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct Step4: View {
-    @EnvironmentObject var navigation: Navigation
     var body: some View {
-        ChatBubbleView {
-            ChatBubbleText(text: "Step 3")
-            ResetButton(action: { navigation.reset() })
+        GeometryReader { geo in
+            TabletView()
+                .frame(width: 450, height: 600)
+                .offset(x: geo.size.width * 0.52, y: geo.size.height * 0.17)
         }
     }
 }
@@ -20,5 +20,6 @@ struct Step4: View {
 struct Step4_Previews: PreviewProvider {
     static var previews: some View {
         Step4()
+            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation())
     }
 }

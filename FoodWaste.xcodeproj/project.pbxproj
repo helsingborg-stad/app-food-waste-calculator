@@ -15,7 +15,9 @@
 		88006FED27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */; };
 		88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */; };
 		8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */; };
+		883FE55D27EC7B3700FDB8B8 /* Step5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FE55C27EC7B3700FDB8B8 /* Step5.swift */; };
 		88C5E4AE27E9F26400D4D68F /* NavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5E4AD27E9F26400D4D68F /* NavigationTests.swift */; };
+		88C5E4B027E9FE3300D4D68F /* TabletView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C5E4AF27E9FE3300D4D68F /* TabletView.swift */; };
 		88C8E8D927E47EBE0030C13A /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8D827E47EBE0030C13A /* Navigation.swift */; };
 		88C8E8DC27E48F6B0030C13A /* ButtonViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8DB27E48F6B0030C13A /* ButtonViews.swift */; };
 		88C8E8DE27E496AB0030C13A /* TextViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8DD27E496AB0030C13A /* TextViews.swift */; };
@@ -23,7 +25,7 @@
 		88C8E8E727E9CD830030C13A /* Step2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8E627E9CD830030C13A /* Step2.swift */; };
 		88C8E8E927E9CEAD0030C13A /* Step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8E827E9CEAD0030C13A /* Step3.swift */; };
 		88C8E8EB27E9CECF0030C13A /* Step4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8EA27E9CECF0030C13A /* Step4.swift */; };
-		F6318ED327E1D9E000F9BE03 /* RoundeViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED227E1D9E000F9BE03 /* RoundeViews.swift */; };
+		88D4CC3D27EDBA7400CEC0D1 /* Step6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4CC3C27EDBA7400CEC0D1 /* Step6.swift */; };
 		F6318ED327E1D9E000F9BE03 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED227E1D9E000F9BE03 /* RoundedViews.swift */; };
 		F6318ED827E488A300F9BE03 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED727E488A300F9BE03 /* CalculatorView.swift */; };
 		F6318EDA27E488D100F9BE03 /* CalculatorFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED927E488D100F9BE03 /* CalculatorFaceView.swift */; };
@@ -65,7 +67,9 @@
 		88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
+		883FE55C27EC7B3700FDB8B8 /* Step5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step5.swift; sourceTree = "<group>"; };
 		88C5E4AD27E9F26400D4D68F /* NavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTests.swift; sourceTree = "<group>"; };
+		88C5E4AF27E9FE3300D4D68F /* TabletView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabletView.swift; sourceTree = "<group>"; };
 		88C8E8D827E47EBE0030C13A /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		88C8E8DB27E48F6B0030C13A /* ButtonViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViews.swift; sourceTree = "<group>"; };
 		88C8E8DD27E496AB0030C13A /* TextViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViews.swift; sourceTree = "<group>"; };
@@ -73,7 +77,7 @@
 		88C8E8E627E9CD830030C13A /* Step2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step2.swift; sourceTree = "<group>"; };
 		88C8E8E827E9CEAD0030C13A /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
 		88C8E8EA27E9CECF0030C13A /* Step4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4.swift; sourceTree = "<group>"; };
-		F6318ED227E1D9E000F9BE03 /* RoundeViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundeViews.swift; sourceTree = "<group>"; };
+		88D4CC3C27EDBA7400CEC0D1 /* Step6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6.swift; sourceTree = "<group>"; };
 		F6318ED227E1D9E000F9BE03 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		F6318ED727E488A300F9BE03 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
 		F6318ED927E488D100F9BE03 /* CalculatorFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorFaceView.swift; sourceTree = "<group>"; };
@@ -197,6 +201,7 @@
 				88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */,
 				88C8E8DB27E48F6B0030C13A /* ButtonViews.swift */,
 				88C8E8DD27E496AB0030C13A /* TextViews.swift */,
+				88C5E4AF27E9FE3300D4D68F /* TabletView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -208,6 +213,8 @@
 				88C8E8E627E9CD830030C13A /* Step2.swift */,
 				88C8E8E827E9CEAD0030C13A /* Step3.swift */,
 				88C8E8EA27E9CECF0030C13A /* Step4.swift */,
+				883FE55C27EC7B3700FDB8B8 /* Step5.swift */,
+				88D4CC3C27EDBA7400CEC0D1 /* Step6.swift */,
 			);
 			path = Steps;
 			sourceTree = "<group>";
@@ -358,13 +365,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */,
-				F6318ED327E1D9E000F9BE03 /* RoundeViews.swift in Sources */,
 				F6318ED327E1D9E000F9BE03 /* RoundedViews.swift in Sources */,
 				F6E1FBC127EB50B900781FA6 /* FunctionParameter.swift in Sources */,
 				F6318ED827E488A300F9BE03 /* CalculatorView.swift in Sources */,
 				88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */,
 				88C8E8DC27E48F6B0030C13A /* ButtonViews.swift in Sources */,
 				88C8E8D927E47EBE0030C13A /* Navigation.swift in Sources */,
+				883FE55D27EC7B3700FDB8B8 /* Step5.swift in Sources */,
+				88D4CC3D27EDBA7400CEC0D1 /* Step6.swift in Sources */,
 				88C8E8E927E9CEAD0030C13A /* Step3.swift in Sources */,
 				88C8E8E727E9CD830030C13A /* Step2.swift in Sources */,
 				8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */,
@@ -374,6 +382,7 @@
 				F6318EDA27E488D100F9BE03 /* CalculatorFaceView.swift in Sources */,
 				F6318EDE27E488FE00F9BE03 /* CalculatorKeyboardView.swift in Sources */,
 				F6318EE427E4A0D200F9BE03 /* Game.swift in Sources */,
+				88C5E4B027E9FE3300D4D68F /* TabletView.swift in Sources */,
 				88006FD027E0E48800BA6D4C /* FoodWasteApp.swift in Sources */,
 				F6318EE227E48DFC00F9BE03 /* KeyboardFunctionsView.swift in Sources */,
 				F6318EDC27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift in Sources */,
