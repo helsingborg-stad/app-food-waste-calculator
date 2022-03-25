@@ -12,6 +12,27 @@ struct Step2: View {
     var body: some View {
         GeometryReader { geo in
             ChatBubbleView {
+                HStack(spacing: 15) {
+                    Image("gazpacho")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Image("speaker")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Image("scare")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Image("queue")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Image("sun")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                    Image("clouds")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+                .frame(height: 70)
                 ChatBubbleText(text: "Maträtt, ljud, kö och väder påverkar mängden mat som kommer slängas!")
                 HStack {
                     Spacer()

@@ -10,14 +10,9 @@ import SwiftUI
 struct Step4: View {
     var body: some View {
         GeometryReader { geo in
-            ZStack {
-                Image("tabletOn")
-                    .resizable()
-                CalculatorView()
-                    .frame(maxWidth: 370, maxHeight: 600)
-            }
-            .frame(width: 450, height: 600)
-            .offset(x: geo.size.width * 0.52, y: geo.size.height * 0.17)
+            TabletView()
+                .frame(width: 450, height: 600)
+                .offset(x: geo.size.width * 0.52, y: geo.size.height * 0.17)
         }
     }
 }
@@ -25,6 +20,6 @@ struct Step4: View {
 struct Step4_Previews: PreviewProvider {
     static var previews: some View {
         Step4()
-            .previewInterfaceOrientation(.landscapeLeft)
+            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation())
     }
 }
