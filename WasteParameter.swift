@@ -16,7 +16,7 @@ enum WasteParameter: String, Identifiable {
         switch self {
         case .burger, .gazpacho, .fish:
             return .food
-        case .soundModerate, .soundLow, .soundHigh:
+        case  .soundLow, .soundModerate, .soundHigh:
             return .sound
         case .queueShort, .queueModerate, .queueLong:
             return .queue
