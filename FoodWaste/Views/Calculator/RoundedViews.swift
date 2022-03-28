@@ -25,7 +25,8 @@ struct RoundedWasteDisplay: View {
             ForEach (wasteItems) {waste in
                 Image(waste.image)
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 50)
             }
         }
         .frame(maxWidth: .infinity)
@@ -47,7 +48,8 @@ struct RoundedWasteButton: View {
             HStack (alignment: .center) {
                 Image(waste.image)
                     .resizable()
-                    .frame(width: 50, height: 50)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(height: 50)
             }
             .frame(maxWidth: .infinity)
             .frame(height: 70)

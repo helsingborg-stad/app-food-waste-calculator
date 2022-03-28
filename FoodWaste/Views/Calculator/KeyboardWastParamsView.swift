@@ -20,9 +20,9 @@ struct KeyboardWastParamsView: View {
             }
             
             Group {
-                RoundedWasteButton(game: $game, waste: .happy)
-                RoundedWasteButton(game: $game, waste: .scare)
-                RoundedWasteButton(game: $game, waste: .angry)
+                RoundedWasteButton(game: $game, waste: .soundLow)
+                RoundedWasteButton(game: $game, waste: .soundModerate)
+                RoundedWasteButton(game: $game, waste: .soundHigh)
             }
 
             Group {

@@ -12,7 +12,7 @@ struct Game {
     
     init(loadTestData: Bool = false) {
         if (loadTestData) {
-            wasteInputs.append(WasteParameter.gazpacho)
+            wasteInputs.append(.queueLong)
         }
     }
     

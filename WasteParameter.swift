@@ -8,7 +8,7 @@
 import Foundation
 
 enum WasteParameter: String, Identifiable {
-    case burger, gazpacho, fish, happy, scare, angry, queueShort, queueModerate, queueLong, clouds, sun, rain
+    case burger, gazpacho, fish, soundLow, soundModerate, soundHigh, queueShort, queueModerate, queueLong, clouds, sun, rain
     
     var id: Self { self }
     
@@ -16,7 +16,7 @@ enum WasteParameter: String, Identifiable {
         switch self {
         case .burger, .gazpacho, .fish:
             return .food
-        case .scare, .happy, .angry:
+        case  .soundLow, .soundModerate, .soundHigh:
             return .sound
         case .queueShort, .queueModerate, .queueLong:
             return .queue
@@ -34,11 +34,11 @@ enum WasteParameter: String, Identifiable {
     
     var impact: Int {
         switch self {
-        case .burger, .angry, .queueLong, .rain:
+        case .burger, .soundHigh, .queueLong, .rain:
             return 30
-        case .fish, .scare, .queueModerate, .clouds:
+        case .fish, .soundModerate, .queueModerate, .clouds:
             return 20
-        case .gazpacho, .happy, .queueShort, .sun:
+        case .gazpacho, .soundLow, .queueShort, .sun:
             return 10
         }
     }
