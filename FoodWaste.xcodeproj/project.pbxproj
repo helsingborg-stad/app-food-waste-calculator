@@ -26,9 +26,10 @@
 		88C8E8E927E9CEAD0030C13A /* Step3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8E827E9CEAD0030C13A /* Step3.swift */; };
 		88C8E8EB27E9CECF0030C13A /* Step4.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88C8E8EA27E9CECF0030C13A /* Step4.swift */; };
 		88D4CC3D27EDBA7400CEC0D1 /* Step6.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88D4CC3C27EDBA7400CEC0D1 /* Step6.swift */; };
+		88DA322327F3486D00439135 /* CalculatorScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA322227F3486D00439135 /* CalculatorScreenView.swift */; };
+		88DA322527F34B5300439135 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA322427F34B5300439135 /* FaceView.swift */; };
 		F6318ED327E1D9E000F9BE03 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED227E1D9E000F9BE03 /* RoundedViews.swift */; };
 		F6318ED827E488A300F9BE03 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED727E488A300F9BE03 /* CalculatorView.swift */; };
-		F6318EDA27E488D100F9BE03 /* CalculatorFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED927E488D100F9BE03 /* CalculatorFaceView.swift */; };
 		F6318EDC27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */; };
 		F6318EDE27E488FE00F9BE03 /* CalculatorKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */; };
 		F6318EE027E48DDB00F9BE03 /* KeyboardWastParamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */; };
@@ -78,9 +79,10 @@
 		88C8E8E827E9CEAD0030C13A /* Step3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step3.swift; sourceTree = "<group>"; };
 		88C8E8EA27E9CECF0030C13A /* Step4.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step4.swift; sourceTree = "<group>"; };
 		88D4CC3C27EDBA7400CEC0D1 /* Step6.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step6.swift; sourceTree = "<group>"; };
+		88DA322227F3486D00439135 /* CalculatorScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorScreenView.swift; sourceTree = "<group>"; };
+		88DA322427F34B5300439135 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		F6318ED227E1D9E000F9BE03 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		F6318ED727E488A300F9BE03 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
-		F6318ED927E488D100F9BE03 /* CalculatorFaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorFaceView.swift; sourceTree = "<group>"; };
 		F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorDisplayOutputView.swift; sourceTree = "<group>"; };
 		F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorKeyboardView.swift; sourceTree = "<group>"; };
 		F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardWastParamsView.swift; sourceTree = "<group>"; };
@@ -224,11 +226,12 @@
 			children = (
 				F6318ED227E1D9E000F9BE03 /* RoundedViews.swift */,
 				F6318ED727E488A300F9BE03 /* CalculatorView.swift */,
-				F6318ED927E488D100F9BE03 /* CalculatorFaceView.swift */,
 				F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */,
 				F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */,
 				F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */,
 				F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */,
+				88DA322227F3486D00439135 /* CalculatorScreenView.swift */,
+				88DA322427F34B5300439135 /* FaceView.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -365,8 +368,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */,
+				88DA322527F34B5300439135 /* FaceView.swift in Sources */,
 				F6318ED327E1D9E000F9BE03 /* RoundedViews.swift in Sources */,
 				F6E1FBC127EB50B900781FA6 /* FunctionParameter.swift in Sources */,
+				88DA322327F3486D00439135 /* CalculatorScreenView.swift in Sources */,
 				F6318ED827E488A300F9BE03 /* CalculatorView.swift in Sources */,
 				88006FD227E0E48800BA6D4C /* ContentView.swift in Sources */,
 				88C8E8DC27E48F6B0030C13A /* ButtonViews.swift in Sources */,
@@ -379,7 +384,6 @@
 				88C8E8EB27E9CECF0030C13A /* Step4.swift in Sources */,
 				88C8E8E527E9CD640030C13A /* Step1.swift in Sources */,
 				88C8E8DE27E496AB0030C13A /* TextViews.swift in Sources */,
-				F6318EDA27E488D100F9BE03 /* CalculatorFaceView.swift in Sources */,
 				F6318EDE27E488FE00F9BE03 /* CalculatorKeyboardView.swift in Sources */,
 				F6318EE427E4A0D200F9BE03 /* Game.swift in Sources */,
 				88C5E4B027E9FE3300D4D68F /* TabletView.swift in Sources */,
