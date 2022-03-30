@@ -72,9 +72,16 @@ struct FaceView: View {
                 EyeShape(topCurve: status.eyeControlPoints[0], bottomCurve: status.eyeControlPoints[1])
                     .fill(Color(status.color))
                     .frame(width: 22, height: 22)
+                    .overlay(
+                        status == .thinking ? SpinningSpiral().frame(width: 27, height: 27) : nil
+                        ,alignment: .center)
                 Spacer()
-                EyeShape(topCurve: status.eyeControlPoints[0], bottomCurve: status.eyeControlPoints[1])              .fill(Color(status.color))
+                EyeShape(topCurve: status.eyeControlPoints[0], bottomCurve: status.eyeControlPoints[1])
+                    .fill(Color(status.color))
                     .frame(width: 22, height: 22)
+                    .overlay(
+                        status == .thinking ? SpinningSpiral().frame(width: 27, height: 27) : nil
+                        ,alignment: .center)
             }
             .frame(height: 30)
             MouthShape(controlPoint: status.mouthControlPoint)
@@ -136,10 +143,28 @@ struct EyeShape: Shape {
     }
 }
 
+struct SpinningSpiral : View {
+    @State var isAnimating = false
+    var foreverAnimation: Animation {
+        Animation.linear(duration: 2.0).repeatForever(autoreverses: false)
+    }
+    var body: some View {
+        Image("spiral")
+            .resizable()
+            .rotationEffect(Angle(degrees: self.isAnimating ? 360.0 : 0.0))
+            .onAppear {
+                withAnimation(foreverAnimation) {
+                    self.isAnimating = true
+                }
+            }
+    }
+}
+
 struct FacePreview: View {
     var body: some View {
         VStack {
             FaceView(status: FaceStatus.neutral)
+            FaceView(status: FaceStatus.thinking)
             FaceView(status: FaceStatus.happy)
             FaceView(status: FaceStatus.disappointed)
             FaceView(status: FaceStatus.angry)
