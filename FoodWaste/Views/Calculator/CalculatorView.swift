@@ -9,10 +9,20 @@ import SwiftUI
 
 struct CalculatorView: View {
     @State private var game: Game = Game()
+    @State private var status: FaceStatus = FaceStatus.neutral
     
     var body: some View {
         VStack {
-            CalculatorFaceView(images: [])
+            ZStack {
+                CalculatorScreenView()
+                FaceView(status: status)
+                // TODO: for testing only delete later
+                    .onTapGesture {
+                        withAnimation(.easeInOut(duration: 0.8)) {
+                            status = status.next
+                        }
+                    }
+            }
             CalculatorDisplayWasteOutputView(wasteScore: $game.wasteInputs)
             CalculatorKeyboardView(game: $game)
         }
