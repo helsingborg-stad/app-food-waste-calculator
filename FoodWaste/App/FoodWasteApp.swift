@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct FoodWasteApp: App {
+    @StateObject var navigation = Navigation()
+
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(navigation)
         }
     }
 }

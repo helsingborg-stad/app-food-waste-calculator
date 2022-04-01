@@ -15,7 +15,7 @@ struct ChatBubbleView<Content: View>: View {
     }
 
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             self.content
         }
         .padding(30)
