@@ -39,6 +39,8 @@ struct Step6: View {
 }
 
 struct Step6_Previews: PreviewProvider {
+    @State static var game: Game = Game(loadTestData: true)
+    
     static var previews: some View {
         Step6()
             .previewInterfaceOrientation(.landscapeLeft)
