@@ -29,11 +29,11 @@ struct Step6: View {
         let level = game.getScoreLevel(score: sum)
         switch level {
         case .low:
-            return "En dag med 28g matsvinn/elev är lite matsvinn.\n\nVill du prova igen?"
+            return Strings.lowResult
         case .medium:
-            return "En dag med 38g matsvinn/elev är medel?? matsvinn.\n\nVill du prova igen?"
+            return Strings.mediumResult
         case .high:
-            return "En dag med 48g matsvinn/elev är mycket matsvinn.\n\nDå behöver vi beställa mindre mat så att vi inte behöver kasta mat i onödan.\n\nVill du prova igen?"
+            return Strings.highResult
         }
     }
 }

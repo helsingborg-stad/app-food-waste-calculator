@@ -33,7 +33,7 @@ struct Step2: View {
                         .aspectRatio(contentMode: .fit)
                 }
                 .frame(height: 70)
-                ChatBubbleText(text: "Maträtt, ljud, kö och väder påverkar mängden mat som kommer slängas!")
+                ChatBubbleText(text: Strings.step2)
                 HStack {
                     Spacer()
                     ForwardButton(action: { navigation.next() })
