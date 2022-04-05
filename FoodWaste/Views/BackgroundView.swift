@@ -9,20 +9,21 @@ import SwiftUI
 
 struct BackgroundView: View {
     @EnvironmentObject var navigation: Navigation
-    
+
     var body: some View {
         ZStack {
-            Image("background")
-                .resizable()
-                .scaledToFill()
-                .ignoresSafeArea()
-
-            VStack{
-                HStack{
+            Color.clear.overlay(
+                Image("background")
+                    .resizable()
+                    .scaledToFill()
+            )
+            .edgesIgnoringSafeArea(.all)
+            VStack {
+                HStack {
                     Spacer()
-                    if (navigation.step > 0) {
-                        ResetButton(action: {navigation.reset()})
-                        .offset(x: -70, y: 15)
+                    if navigation.step > 0 {
+                        ResetButton(action: { navigation.reset() })
+                            .offset(x: -70, y: 15)
                     }
                 }
                 Spacer()
