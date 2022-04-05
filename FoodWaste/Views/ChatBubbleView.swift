@@ -9,20 +9,20 @@ import SwiftUI
 
 struct ChatBubbleView<Content: View>: View {
     let content: Content
-    
+
     init(@ViewBuilder content: () -> Content) {
         self.content = content()
     }
-    
+
     var body: some View {
-        VStack() {
+        VStack {
             self.content
         }
         .padding(30)
         .padding(.bottom, 25)
         .background(Color("ChatBubbleColor"))
         .clipShape(Bubble())
-        .frame(maxWidth: 450)
+        .frame(maxWidth: 500)
     }
 }
 
@@ -31,7 +31,7 @@ struct Bubble: Shape {
         let width = rect.width
         let height = rect.height
         let path = UIBezierPath()
-        
+
         path.move(to: CGPoint(x: 60, y: height-30))
         path.addLine(to: CGPoint(x: width-15, y: height-30))
         path.addQuadCurve(to: CGPoint(x: width, y: height-45),
@@ -46,20 +46,19 @@ struct Bubble: Shape {
         path.addQuadCurve(to: CGPoint(x: 15, y: height-30),
                           controlPoint: CGPoint(x: 0, y: height-30))
         path.addLine(to: CGPoint(x: 15, y: height))
-        
+
         return Path(path.cgPath)
     }
 }
 
-
 struct ChatBubbleView_Previews: PreviewProvider {
     static var previews: some View {
-        ChatBubbleView{Text("Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
-                .bold()
-                .font(.title)
-                .foregroundColor(.white)
+        ChatBubbleView { Text("Hej, vill du hjälpa mig att\nplanera skolmaten? \n\nVi vill akta oss för matsvinn!")
+            .bold()
+            .font(.title)
+            .foregroundColor(.white)
         }
-        ChatBubbleView{
+        ChatBubbleView {
             Text("Yo!")
                 .bold()
                 .font(.title)
@@ -67,4 +66,3 @@ struct ChatBubbleView_Previews: PreviewProvider {
         }
     }
 }
-
