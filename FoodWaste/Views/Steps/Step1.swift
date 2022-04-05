@@ -18,7 +18,7 @@ struct Step1: View {
                     ForwardButton(action: { navigation.next() })
                 }
             }
-            .offset(x: geo.size.width * 0.45, y: geo.size.height * 0.21)
+            .offset(x: geo.size.width * 0.47, y: geo.size.height * 0.21)
         }
     }
 }

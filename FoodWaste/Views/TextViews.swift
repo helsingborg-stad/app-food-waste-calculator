@@ -12,7 +12,7 @@ struct ChatBubbleText: View {
     var body: some View {
         Text(text)
             .bold()
-            .font(.title)
+            .font(.largeTitle)
             .foregroundColor(.white)
     }
 }

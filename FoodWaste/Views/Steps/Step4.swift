@@ -11,8 +11,9 @@ struct Step4: View {
     var body: some View {
         GeometryReader { geo in
             TabletView()
-                .frame(width: 450, height: 600)
-                .offset(x: geo.size.width * 0.52, y: geo.size.height * 0.17)
+                .aspectRatio(0.75, contentMode: .fit)
+                .frame(width: geo.size.height * 0.75, height: geo.size.height * 0.75)
+                .offset(x: geo.size.width * 0.462, y: geo.size.height * 0.17)
         }
     }
 }
