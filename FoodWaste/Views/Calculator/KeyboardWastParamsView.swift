@@ -12,7 +12,7 @@ struct KeyboardWastParamsView: View {
     var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
     
     var body: some View {
-        LazyVGrid(columns: columns, spacing: 5) {
+        LazyVGrid(columns: columns, spacing: 7) {
             Group {
                 RoundedWasteButton(game: $game, waste: .burger)
                 RoundedWasteButton(game: $game, waste: .gazpacho)
