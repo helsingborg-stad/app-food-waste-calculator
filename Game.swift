@@ -12,12 +12,11 @@ enum ScoreLevel {
 }
 
 enum DisplayState {
-case input, result
+    case input, result
 }
 
 struct Game {
     var wasteInputs: [WasteParameter] = []
-    var displayState: DisplayState = .input
     
     init(loadTestData: Bool = false) {
         if (loadTestData) {
