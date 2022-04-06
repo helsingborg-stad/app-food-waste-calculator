@@ -35,11 +35,11 @@ enum WasteParameter: String, Identifiable {
     var impact: Int {
         switch self {
         case .burger, .soundHigh, .queueLong, .rain:
-            return 30
+            return 3
         case .fish, .soundModerate, .queueModerate, .clouds:
-            return 20
+            return 2
         case .gazpacho, .soundLow, .queueShort, .sun:
-            return 10
+            return 1
         }
     }
 }
