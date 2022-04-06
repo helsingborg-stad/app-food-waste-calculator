@@ -7,8 +7,13 @@
 
 import SwiftUI
 
+enum CalculatorState {
+    case input, calculating, result
+}
+
 struct CalculatorView: View {
     @State private var game: Game = Game()
+    @State private var calculatorState: CalculatorState = .input
     @State private var status: FaceStatus = FaceStatus.neutral
     
     var body: some View {
@@ -16,15 +21,14 @@ struct CalculatorView: View {
             ZStack {
                 CalculatorScreenView()
                 FaceView(status: status)
-                // TODO: for testing only delete later
                     .onTapGesture {
                         withAnimation(.easeInOut(duration: 0.8)) {
                             status = status.next
                         }
                     }
             }
-            CalculatorDisplayWasteOutputView(wasteScore: $game.wasteInputs)
-            CalculatorKeyboardView(game: $game)
+            CalculatorDisplayWasteOutputView(game: $game, calculatorState: $calculatorState)
+            CalculatorKeyboardView(game: $game, calculatorState: $calculatorState, faceStatus: $status)
         }
     }
 }
