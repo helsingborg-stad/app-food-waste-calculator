@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum ScoreLevel {
+    case low, medium, high
+}
+
 struct Game {
     var wasteInputs: [WasteParameter] = []
     
@@ -15,7 +19,7 @@ struct Game {
             wasteInputs.append(.queueLong)
         }
     }
-    
+
     mutating func handleWasteButton(waste: WasteParameter) {
         wasteInputs.append(waste)
     }
@@ -24,14 +28,14 @@ struct Game {
         wasteInputs.removeAll()
     }
     
-    func sumWasteScore() -> () {
+    func sumWasteScore() -> Int {
         var sumImpact = 0
         
         wasteInputs.forEach { waste in
             sumImpact += waste.impact
         }
         
-        print(sumImpact)
+        return sumImpact
     }
     
     mutating func handleFunctionButton(function: FunctionParameter) {
@@ -39,7 +43,18 @@ struct Game {
         case .delete:
             wasteInputs.removeAll()
         case .sum:
-            sumWasteScore()
+            print(sumWasteScore())
+        }
+    }
+    
+    func getScoreLevel(score: Int) -> ScoreLevel {
+        switch score {
+        case 0...6:
+            return .low
+        case 7...9:
+            return .medium
+        default:
+            return .high
         }
     }
 }
