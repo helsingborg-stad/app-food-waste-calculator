@@ -25,6 +25,7 @@ let StepsList: [AnyView] = [
     AnyView(Step3()),
     AnyView(Step4()),
     AnyView(Step5()),
+    AnyView(Step6()),
 ]
 
 struct ContentView_Previews: PreviewProvider {

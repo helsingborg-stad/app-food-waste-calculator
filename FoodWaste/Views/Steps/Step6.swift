@@ -11,7 +11,11 @@ struct Step6: View {
     @EnvironmentObject var navigation: Navigation
     var body: some View {
         ChatBubbleView {
-            ResetButton(action: { navigation.reset() })
+            ChatBubbleText(text: "En dag med ")
+            HStack {
+                Spacer()
+                ForwardButton(action: { navigation.previous() })
+            }
         }
     }
 }
