@@ -37,5 +37,6 @@ struct CalculatorView_Previews: PreviewProvider {
     static var previews: some View {
         CalculatorView()
             .padding()
+.previewInterfaceOrientation(.landscapeLeft)
     }
 }

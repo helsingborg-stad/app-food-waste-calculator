@@ -17,6 +17,7 @@ struct Step5: View {
                     .resizable()
                     .padding()
                 CalculatorView()
+                    .padding([.horizontal, .vertical], 35)
             }
             .aspectRatio(0.75, contentMode: .fit)
             .frame(width: geo.size.height * 0.75, height: geo.size.height * 0.75)
