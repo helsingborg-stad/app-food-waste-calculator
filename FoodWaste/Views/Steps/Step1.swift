@@ -12,7 +12,7 @@ struct Step1: View {
     var body: some View {
         GeometryReader { geo in
             ChatBubbleView {
-                ChatBubbleText(text: Strings.step1)
+                ChatBubbleText(text: "step1")
                 HStack {
                     Spacer()
                     ForwardButton(action: { navigation.next() })

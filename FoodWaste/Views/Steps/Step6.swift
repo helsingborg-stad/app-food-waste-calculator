@@ -10,7 +10,7 @@ import SwiftUI
 struct Step6: View {
     @EnvironmentObject var game: Game
     @EnvironmentObject var navigation: Navigation
-    
+
     var body: some View {
         GeometryReader { geo in
             ChatBubbleView {
@@ -23,24 +23,24 @@ struct Step6: View {
             .offset(x: geo.size.width * 0.45, y: geo.size.height * 0.21)
         }
     }
-    
-    func getLevelMessage() -> String {
+
+    func getLevelMessage() -> LocalizedStringKey {
         let sum = game.sumWasteScore()
         let level = game.getScoreLevel(score: sum)
         switch level {
         case .low:
-            return Strings.lowResult
+            return "calculationResultLow"
         case .medium:
-            return Strings.mediumResult
+            return "calculationResultMedium"
         case .high:
-            return Strings.highResult
+            return "calculationResultHigh"
         }
     }
 }
 
 struct Step6_Previews: PreviewProvider {
-    @State static var game: Game = Game(loadTestData: true)
-    
+    @State static var game: Game = .init(loadTestData: true)
+
     static var previews: some View {
         Step6()
             .previewInterfaceOrientation(.landscapeLeft)
