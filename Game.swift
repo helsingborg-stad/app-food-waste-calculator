@@ -7,6 +7,10 @@
 
 import Foundation
 
+enum ScoreLevel {
+    case low, medium, high
+}
+
 enum DisplayState {
 case input, result
 }
@@ -23,7 +27,7 @@ struct Game {
             wasteInputs.append(.queueShort)
         }
     }
-    
+
     mutating func handleWasteButton(waste: WasteParameter) {
         wasteInputs.append(waste)
     }
@@ -44,5 +48,16 @@ struct Game {
     
     mutating func removeAllWasteInputs() {
         wasteInputs.removeAll()
+    }
+    
+    func getScoreLevel(score: Int) -> ScoreLevel {
+        switch score {
+        case 0...6:
+            return .low
+        case 7...9:
+            return .medium
+        default:
+            return .high
+        }
     }
 }

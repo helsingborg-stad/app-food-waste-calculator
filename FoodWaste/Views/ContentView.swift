@@ -8,15 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    @StateObject var navigation = Navigation()
+    @EnvironmentObject var navigation: Navigation
     
     var body: some View {
         ZStack {
             BackgroundView()
             navigation.getCurrentStep(views: StepsList)
         }
-        .environmentObject(navigation)
     }
+    
+    let StepsList: [AnyView] = [
+        AnyView(Step1()),
+        AnyView(Step2()),
+        AnyView(Step3()),
+        AnyView(Step4()),
+        AnyView(Step5()),
+        AnyView(Step6()),
+    ]
 }
 
 let StepsList: [AnyView] = [
