@@ -33,7 +33,7 @@ struct BackgroundView: View {
                     Spacer()
                     if navigation.step > 0 {
                         ResetButton(action: { navigation.reset() })
-                            .offset(x: -70, y: -10)
+                            .offset(x: -70, y: 0)
                     }
                 }
                 Spacer()
