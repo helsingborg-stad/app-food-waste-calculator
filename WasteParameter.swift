@@ -34,12 +34,12 @@ enum WasteParameter: String, Identifiable {
     
     var impact: Int {
         switch self {
-        case .burger, .soundHigh, .queueLong, .rain:
-            return 30
+        case .burger, .soundHigh, .queueLong, .sun:
+            return 3
         case .fish, .soundModerate, .queueModerate, .clouds:
-            return 20
-        case .gazpacho, .soundLow, .queueShort, .sun:
-            return 10
+            return 2
+        case .gazpacho, .soundLow, .queueShort, .rain:
+            return 1
         }
     }
 }

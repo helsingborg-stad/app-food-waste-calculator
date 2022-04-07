@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Step6: View {
-    @State var game = Game()
+    @EnvironmentObject var game: Game
     @EnvironmentObject var navigation: Navigation
     
     var body: some View {
@@ -39,10 +39,10 @@ struct Step6: View {
 }
 
 struct Step6_Previews: PreviewProvider {
-    @State static var game: Game = Game(loadTestData: true)
-    
     static var previews: some View {
         Step6()
-            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation())
+            .previewInterfaceOrientation(.landscapeLeft)
+            .environmentObject(Navigation())
+            .environmentObject(Game())
     }
 }

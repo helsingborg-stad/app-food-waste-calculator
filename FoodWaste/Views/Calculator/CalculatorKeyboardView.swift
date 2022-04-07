@@ -8,20 +8,20 @@
 import SwiftUI
 
 struct CalculatorKeyboardView: View {
-    @Binding var game: Game
+    var handleSum: () -> Void
+    var handleDelete: () -> Void
     
     var body: some View {
         VStack {
-            KeyboardWastParamsView(game: $game)
-            KeyboardFunctionsView(game: $game)
+            KeyboardWastParamsView()
+            KeyboardFunctionsView(handleSum: { handleSum() }, handleDelete: { handleDelete() })
         }
     }
 }
 
 struct CalculatorKeyboardView_Previews: PreviewProvider {
-    @State static var game: Game = Game()
-    
     static var previews: some View {
-        CalculatorKeyboardView(game: $game)
+        CalculatorKeyboardView(handleSum:{}, handleDelete: {})
+            .environmentObject(Game())
     }
 }

@@ -10,11 +10,13 @@ import SwiftUI
 @main
 struct FoodWasteApp: App {
     @StateObject var navigation = Navigation()
+    @StateObject var game = Game()
 
     var body: some Scene {
         WindowGroup {
             ContentView()
                 .environmentObject(navigation)
+                .environmentObject(game)
         }
     }
 }

@@ -8,16 +8,29 @@
 import SwiftUI
 
 struct KeyboardFunctionsView: View {
-    @Binding var game: Game
+    var handleSum: () -> Void
+    var handleDelete: () -> Void
+    
+    @State private var disableFunctionKeys = false
     var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
+    
+    func handleDeleteAction() {
+        handleDelete()
+    }
+    
+    func handleSumAction() {
+        disableFunctionKeys = true
+        handleSum()
+    }
     
     var body: some View {
         LazyVGrid(columns: columns, spacing: 5) {
             Group {
-                RoundedFunctionButton(game: $game, function: .delete)
+                RoundedFunctionButton(function: .delete, buttonAction: { handleDeleteAction() })
                 Spacer()
-                RoundedFunctionButton(game: $game, function: .sum)
+                RoundedFunctionButton(function: .sum, buttonAction: { handleSumAction() })
             }
+            .disabled(disableFunctionKeys)
         }
     }
 }
@@ -26,6 +39,6 @@ struct KeyboardFunctionsView_Previews: PreviewProvider {
     @State static var game: Game = Game(loadTestData: true)
     
     static var previews: some View {
-        KeyboardFunctionsView(game: $game)
+        KeyboardFunctionsView(handleSum: {}, handleDelete: {})
     }
 }

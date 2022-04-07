@@ -11,20 +11,27 @@ enum ScoreLevel {
     case low, medium, high
 }
 
-struct Game {
-    var wasteInputs: [WasteParameter] = []
+enum DisplayState {
+    case input, result
+}
+
+class Game: ObservableObject {
+    @Published var wasteInputs: [WasteParameter] = []
     
     init(loadTestData: Bool = false) {
         if (loadTestData) {
-            wasteInputs.append(.queueLong)
+            wasteInputs.append(.gazpacho)
+            wasteInputs.append(.soundModerate)
+            wasteInputs.append(.rain)
+            wasteInputs.append(.queueShort)
         }
     }
 
-    mutating func handleWasteButton(waste: WasteParameter) {
+    func handleWasteButton(waste: WasteParameter) {
         wasteInputs.append(waste)
     }
     
-    mutating func resetWasteScore() {
+    func resetWasteScore() {
         wasteInputs.removeAll()
     }
     
@@ -38,13 +45,8 @@ struct Game {
         return sumImpact
     }
     
-    mutating func handleFunctionButton(function: FunctionParameter) {
-        switch function {
-        case .delete:
-            wasteInputs.removeAll()
-        case .sum:
-            print(sumWasteScore())
-        }
+    func removeAllWasteInputs() {
+        wasteInputs.removeAll()
     }
     
     func getScoreLevel(score: Int) -> ScoreLevel {

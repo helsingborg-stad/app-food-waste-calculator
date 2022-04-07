@@ -22,7 +22,7 @@ enum FunctionParameter: String {
     var image: String {
         switch self {
         case .delete:
-            return "arrow.left"
+            return "arrow"
         case .sum:
             return "equal"
         }
