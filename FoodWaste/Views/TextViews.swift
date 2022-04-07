@@ -8,17 +8,19 @@
 import SwiftUI
 
 struct ChatBubbleText: View {
-    var text: LocalizedStringKey
+    var text: String
     var body: some View {
         Text(text)
             .bold()
-            .font(.largeTitle)
+            .font(.system(size: 33.0))
             .foregroundColor(.white)
     }
 }
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
-        ChatBubbleText(text: "Hello world")
+        ChatBubbleView {
+            ChatBubbleText(text: "Hello world")
+        }
     }
 }

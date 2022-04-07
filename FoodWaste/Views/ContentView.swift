@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var navigation: Navigation
-    
+
     var body: some View {
         ZStack {
             BackgroundView()
             navigation.getCurrentStep(views: StepsList)
         }
     }
-    
+
     let StepsList: [AnyView] = [
         AnyView(Step1()),
         AnyView(Step2()),
@@ -47,5 +47,6 @@ struct ContentView_Previews: PreviewProvider {
                 .previewInterfaceOrientation(.landscapeLeft)
         }
         .environmentObject(Navigation())
+        .environmentObject(Localization())
     }
 }

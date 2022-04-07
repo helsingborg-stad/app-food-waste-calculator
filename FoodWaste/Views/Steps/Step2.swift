@@ -9,6 +9,7 @@ import SwiftUI
 
 struct Step2: View {
     @EnvironmentObject var navigation: Navigation
+    @EnvironmentObject var localization: Localization
     var body: some View {
         GeometryReader { geo in
             ChatBubbleView {
@@ -33,13 +34,13 @@ struct Step2: View {
                         .aspectRatio(contentMode: .fit)
                 }
                 .frame(height: 70)
-                ChatBubbleText(text: "step2")
+                ChatBubbleText(text: "step2".localized(localization.language))
                 HStack {
                     Spacer()
                     ForwardButton(action: { navigation.next() })
                 }
             }
-            .offset(x: geo.size.width * 0.47, y: geo.size.height * 0.21)
+            .offset(x: geo.size.width * 0.47, y: geo.size.height * 0.16)
         }
     }
 }
@@ -47,6 +48,6 @@ struct Step2: View {
 struct Step2_Previews: PreviewProvider {
     static var previews: some View {
         Step2()
-            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation())
+            .previewInterfaceOrientation(.landscapeLeft).environmentObject(Navigation()).environmentObject(Localization())
     }
 }
