@@ -46,7 +46,6 @@ struct CalculatorView: View {
             navigation.next()
             calculatorState = .input
             faceStatus = .neutral
-//            game.removeAllWasteInputs()
         }
     }
     
@@ -78,5 +77,6 @@ struct CalculatorView_Previews: PreviewProvider {
         CalculatorView()
             .padding()
             .previewInterfaceOrientation(.landscapeLeft)
+            .environmentObject(Game())
     }
 }
