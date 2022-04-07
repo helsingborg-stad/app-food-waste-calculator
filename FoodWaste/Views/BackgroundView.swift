@@ -36,6 +36,7 @@ struct BackgroundView: View {
                             .offset(x: -70, y: 0)
                     }
                 }
+                .padding(.top, 20)
                 Spacer()
             }
         }

@@ -15,6 +15,7 @@ struct ContentView: View {
             BackgroundView()
             navigation.getCurrentStep(views: StepsList)
         }
+        .statusBar(hidden: true)
     }
 
     let StepsList: [AnyView] = [
