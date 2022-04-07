@@ -24,7 +24,7 @@ struct CalculatorView: View {
             faceStatus = .thinking
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
             calculatorState = .result
             withAnimation(.easeInOut(duration: 0.8)) {
                 faceStatus = .angry
@@ -42,11 +42,11 @@ struct CalculatorView: View {
             }
         }
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 15.0) {
+        DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
             navigation.next()
             calculatorState = .input
             faceStatus = .neutral
-            game.removeAllWasteInputs()
+//            game.removeAllWasteInputs()
         }
     }
     
@@ -66,6 +66,9 @@ struct CalculatorView: View {
             }
             CalculatorDisplayWasteOutputView(calculatorState: $calculatorState)
             CalculatorKeyboardView(handleSum: {handleSum()}, handleDelete: {handleDelete()})
+        }
+        .onAppear {
+            game.removeAllWasteInputs()
         }
     }
 }

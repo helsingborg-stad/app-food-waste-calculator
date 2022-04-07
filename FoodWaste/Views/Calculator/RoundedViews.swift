@@ -123,6 +123,7 @@ struct RoundedViews_Previews: PreviewProvider {
                 }
             }
             .padding()
+            .environmentObject(Game())
         }
     }
 }
