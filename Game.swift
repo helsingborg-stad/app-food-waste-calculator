@@ -19,7 +19,7 @@ class Game: ObservableObject {
     @Published var wasteInputs: [WasteParameter] = []
     
     init(loadTestData: Bool = false) {
-        if (loadTestData) {
+        if loadTestData {
             wasteInputs.append(.gazpacho)
             wasteInputs.append(.soundModerate)
             wasteInputs.append(.rain)

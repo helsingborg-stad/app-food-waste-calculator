@@ -9,14 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     @EnvironmentObject var navigation: Navigation
-    
+
     var body: some View {
         ZStack {
             BackgroundView()
             navigation.getCurrentStep(views: StepsList)
         }
     }
-    
+
     let StepsList: [AnyView] = [
         AnyView(Step1()),
         AnyView(Step2()),
@@ -29,7 +29,24 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
-            .previewInterfaceOrientation(.landscapeLeft)
+        Group {
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPad Pro (12.9-inch)"))
+                .previewDisplayName("iPad Pro (12.9-inch)")
+                .previewInterfaceOrientation(.landscapeLeft)
+                .environment(\.locale, .init(identifier: "sv"))
+
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPad Air (4th generation)"))
+                .previewDisplayName("iPad Air (4th generation)")
+                .previewInterfaceOrientation(.landscapeLeft)
+
+            ContentView()
+                .previewDevice(PreviewDevice(rawValue: "iPad (9th generation)"))
+                .previewDisplayName("iPad (9th generation)")
+                .previewInterfaceOrientation(.landscapeLeft)
+        }
+        .environmentObject(Navigation())
+        .environmentObject(Localization())
     }
 }
