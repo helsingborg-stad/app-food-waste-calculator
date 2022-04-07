@@ -8,9 +8,10 @@
 import SwiftUI
 
 struct KeyboardFunctionsView: View {
-//    @Binding var game: Game
     var handleSum: () -> Void
     var handleDelete: () -> Void
+    
+    @State private var disableFunctionKeys = false
     var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
     
     func handleDeleteAction() {
@@ -18,6 +19,7 @@ struct KeyboardFunctionsView: View {
     }
     
     func handleSumAction() {
+        disableFunctionKeys = true
         handleSum()
     }
     
@@ -28,6 +30,7 @@ struct KeyboardFunctionsView: View {
                 Spacer()
                 RoundedFunctionButton(function: .sum, buttonAction: { handleSumAction() })
             }
+            .disabled(disableFunctionKeys)
         }
     }
 }
