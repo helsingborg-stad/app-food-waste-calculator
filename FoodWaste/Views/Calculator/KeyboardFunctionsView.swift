@@ -24,9 +24,11 @@ struct KeyboardFunctionsView: View {
     
     func handleSumAction() {
         calculatorState = .calculating
+        
         withAnimation(.easeInOut(duration: 0.8)) {
             faceStatus = .thinking
         }
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
             calculatorState = .result
             withAnimation(.easeInOut(duration: 0.8)) {
@@ -45,12 +47,12 @@ struct KeyboardFunctionsView: View {
             }
         }
         
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 15.0) {
-//            navigation.next()
-//            calculatorState = .input
-//            faceStatus = .neutral
-//            game.removeAllWasteInputs()
-//        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15.0) {
+            navigation.next()
+            calculatorState = .input
+            faceStatus = .neutral
+            game.removeAllWasteInputs()
+        }
     }
     
     var body: some View {
