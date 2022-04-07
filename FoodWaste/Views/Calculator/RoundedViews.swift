@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct RoundedWasteDisplay: View {
-    @Binding var game: Game
+    @EnvironmentObject var game: Game
     @Binding var calculatorState: CalculatorState
     var backgroundColor: Color
     
@@ -66,7 +66,7 @@ struct RoundedButton: View {
 }
 
 struct RoundedWasteButton: View {
-    @Binding var game: Game
+    @EnvironmentObject var game: Game
     var waste: WasteParameter
     
     var body: some View {
@@ -100,23 +100,21 @@ struct RoundedFunctionButton: View {
     }
 }
 
-struct RoundedViews_Previews: PreviewProvider {
-    @State static var game: Game = Game(loadTestData: true)
-    
+struct RoundedViews_Previews: PreviewProvider {    
     static var previews: some View {
         ScrollView {
             VStack (spacing: 20) {
                 Group {
                     Text("Display inputs:")
-                    RoundedWasteDisplay(game: $game, calculatorState: Binding.constant(.input), backgroundColor: Color("CalculatorDisplayOutputColor"))
-                    RoundedWasteDisplay(game: $game, calculatorState: Binding.constant(.result), backgroundColor: Color("CalculatorDisplayOutputColor"))
-                    RoundedWasteDisplay(game: $game, calculatorState: Binding.constant(.calculating), backgroundColor: Color("CalculatorDisplayOutputColor"))
+                    RoundedWasteDisplay(calculatorState: Binding.constant(.input), backgroundColor: Color("CalculatorDisplayOutputColor"))
+                    RoundedWasteDisplay(calculatorState: Binding.constant(.result), backgroundColor: Color("CalculatorDisplayOutputColor"))
+                    RoundedWasteDisplay(calculatorState: Binding.constant(.calculating), backgroundColor: Color("CalculatorDisplayOutputColor"))
                 }
                 Group {
                     Text("Waste Buttons disabled:")
-                    RoundedWasteButton(game: $game, waste: .burger)
+                    RoundedWasteButton(waste: .burger)
                     Text("Waste Buttons enabled:")
-                    RoundedWasteButton(game: $game, waste: .gazpacho)
+                    RoundedWasteButton(waste: .gazpacho)
                 }
                 Group {
                     Text("Function Buttons:")

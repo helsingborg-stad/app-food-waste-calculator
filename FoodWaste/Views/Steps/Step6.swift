@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct Step6: View {
-    @EnvironmentObject var gameObserver: GameObserver
+    @EnvironmentObject var game: Game
     @EnvironmentObject var navigation: Navigation
     
     var body: some View {
@@ -25,8 +25,8 @@ struct Step6: View {
     }
     
     func getLevelMessage() -> String {
-        let sum = gameObserver.game.sumWasteScore()
-        let level = gameObserver.game.getScoreLevel(score: sum)
+        let sum = game.sumWasteScore()
+        let level = game.getScoreLevel(score: sum)
         switch level {
         case .low:
             return "En dag med 28g matsvinn/elev är lite matsvinn.\n\nVill du prova igen?"
@@ -38,11 +38,11 @@ struct Step6: View {
     }
 }
 
-struct Step6_Previews: PreviewProvider {    
+struct Step6_Previews: PreviewProvider {
     static var previews: some View {
         Step6()
             .previewInterfaceOrientation(.landscapeLeft)
             .environmentObject(Navigation())
-            .environmentObject(GameObserver())
+            .environmentObject(Game())
     }
 }

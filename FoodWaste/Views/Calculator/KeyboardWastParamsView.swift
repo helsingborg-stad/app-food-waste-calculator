@@ -8,42 +8,29 @@
 import SwiftUI
 
 struct KeyboardWastParamsView: View {
-    @Binding var game: Game
     var columns: [GridItem] = Array(repeating: .init(.flexible()), count: 3)
+    
+    @ViewBuilder
+    private func getButtonGroup(wasteParameters: [WasteParameter]) -> some View {
+        Group {
+            ForEach (wasteParameters) { waste in
+                RoundedWasteButton(waste: waste)
+            }
+        }
+    }
     
     var body: some View {
         LazyVGrid(columns: columns, spacing: 7) {
-            Group {
-                RoundedWasteButton(game: $game, waste: .burger)
-                RoundedWasteButton(game: $game, waste: .gazpacho)
-                RoundedWasteButton(game: $game, waste: .fish)
-            }
-            
-            Group {
-                RoundedWasteButton(game: $game, waste: .soundLow)
-                RoundedWasteButton(game: $game, waste: .soundModerate)
-                RoundedWasteButton(game: $game, waste: .soundHigh)
-            }
-
-            Group {
-                RoundedWasteButton(game: $game, waste: .queueShort)
-                RoundedWasteButton(game: $game, waste: .queueModerate)
-                RoundedWasteButton(game: $game, waste: .queueLong)
-            }
-
-            Group {
-                RoundedWasteButton(game: $game, waste: .clouds)
-                RoundedWasteButton(game: $game, waste: .sun)
-                RoundedWasteButton(game: $game, waste: .rain)
-            }
+            getButtonGroup(wasteParameters: [.burger, .gazpacho, .fish])
+            getButtonGroup(wasteParameters: [.soundLow, .soundModerate, .soundHigh])
+            getButtonGroup(wasteParameters: [.queueShort, .queueModerate, .queueLong])
+            getButtonGroup(wasteParameters: [.clouds, .sun, .rain])
         }
     }
 }
 
-struct KeyboardWastParamView_Previews: PreviewProvider {
-    @State static var game: Game = Game()
-    
+struct KeyboardWastParamView_Previews: PreviewProvider {   
     static var previews: some View {
-        KeyboardWastParamsView(game: $game)
+        KeyboardWastParamsView()
     }
 }

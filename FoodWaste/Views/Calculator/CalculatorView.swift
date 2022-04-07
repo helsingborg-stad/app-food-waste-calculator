@@ -12,18 +12,60 @@ enum CalculatorState {
 }
 
 struct CalculatorView: View {
-    @EnvironmentObject var gameObserver: GameObserver
+    @EnvironmentObject var game: Game
+    @EnvironmentObject var navigation: Navigation
     @State private var calculatorState: CalculatorState = .input
-    @State private var status: FaceStatus = FaceStatus.neutral
+    @State private var faceStatus: FaceStatus = FaceStatus.neutral
+    
+    func handleSum() -> Void {
+        calculatorState = .calculating
+        
+        withAnimation(.easeInOut(duration: 0.8)) {
+            faceStatus = .thinking
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 7.0) {
+            calculatorState = .result
+            withAnimation(.easeInOut(duration: 0.8)) {
+                faceStatus = .angry
+                
+                let wasteResult = game.sumWasteScore()
+                if (wasteResult <= 6) {
+                    faceStatus = .happy
+                } else if (wasteResult >= 7 && wasteResult <= 10 ) {
+                    faceStatus = .disappointed
+                } else if (wasteResult > 10) {
+                    faceStatus = .angry
+                } else {
+                    faceStatus = .happy
+                }
+            }
+        }
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 15.0) {
+            navigation.next()
+            calculatorState = .input
+            faceStatus = .neutral
+            game.removeAllWasteInputs()
+        }
+    }
+    
+    func handleDelete() -> Void {
+        withAnimation(.easeInOut(duration: 0.4)) {
+            calculatorState = .input
+            faceStatus = .neutral
+        }
+        game.removeAllWasteInputs()
+    }
     
     var body: some View {
         VStack {
             ZStack {
                 CalculatorScreenView()
-                FaceView(status: status)
+                FaceView(status: faceStatus)
             }
-            CalculatorDisplayWasteOutputView(game: $gameObserver.game, calculatorState: $calculatorState)
-            CalculatorKeyboardView(game: $gameObserver.game, calculatorState: $calculatorState, faceStatus: $status)
+            CalculatorDisplayWasteOutputView(calculatorState: $calculatorState)
+            CalculatorKeyboardView(handleSum: {handleSum()}, handleDelete: {handleDelete()})
         }
     }
 }

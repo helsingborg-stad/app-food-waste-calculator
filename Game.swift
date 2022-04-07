@@ -15,8 +15,8 @@ enum DisplayState {
     case input, result
 }
 
-struct Game {
-    var wasteInputs: [WasteParameter] = []
+class Game: ObservableObject {
+    @Published var wasteInputs: [WasteParameter] = []
     
     init(loadTestData: Bool = false) {
         if (loadTestData) {
@@ -27,11 +27,11 @@ struct Game {
         }
     }
 
-    mutating func handleWasteButton(waste: WasteParameter) {
+    func handleWasteButton(waste: WasteParameter) {
         wasteInputs.append(waste)
     }
     
-    mutating func resetWasteScore() {
+    func resetWasteScore() {
         wasteInputs.removeAll()
     }
     
@@ -45,7 +45,7 @@ struct Game {
         return sumImpact
     }
     
-    mutating func removeAllWasteInputs() {
+    func removeAllWasteInputs() {
         wasteInputs.removeAll()
     }
     
@@ -58,13 +58,5 @@ struct Game {
         default:
             return .high
         }
-    }
-}
-
-class GameObserver: ObservableObject {
-    @Published var game: Game
-    
-    init() {
-        game = Game()
     }
 }
