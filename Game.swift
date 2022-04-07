@@ -60,3 +60,11 @@ struct Game {
         }
     }
 }
+
+class GameObserver: ObservableObject {
+    @Published var game: Game
+    
+    init() {
+        game = Game()
+    }
+}

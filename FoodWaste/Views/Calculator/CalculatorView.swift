@@ -12,7 +12,7 @@ enum CalculatorState {
 }
 
 struct CalculatorView: View {
-    @State private var game: Game = Game()
+    @EnvironmentObject var gameObserver: GameObserver
     @State private var calculatorState: CalculatorState = .input
     @State private var status: FaceStatus = FaceStatus.neutral
     
@@ -21,14 +21,9 @@ struct CalculatorView: View {
             ZStack {
                 CalculatorScreenView()
                 FaceView(status: status)
-                    .onTapGesture {
-                        withAnimation(.easeInOut(duration: 0.8)) {
-                            status = status.next
-                        }
-                    }
             }
-            CalculatorDisplayWasteOutputView(game: $game, calculatorState: $calculatorState)
-            CalculatorKeyboardView(game: $game, calculatorState: $calculatorState, faceStatus: $status)
+            CalculatorDisplayWasteOutputView(game: $gameObserver.game, calculatorState: $calculatorState)
+            CalculatorKeyboardView(game: $gameObserver.game, calculatorState: $calculatorState, faceStatus: $status)
         }
     }
 }
