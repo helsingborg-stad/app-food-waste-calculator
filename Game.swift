@@ -60,4 +60,15 @@ struct Game {
             return .high
         }
     }
+    
+    func getScoreLevel(score: Int) -> ScoreLevel {
+        switch score {
+        case 0...6:
+            return .low
+        case 7...9:
+            return .medium
+        default:
+            return .high
+        }
+    }
 }
