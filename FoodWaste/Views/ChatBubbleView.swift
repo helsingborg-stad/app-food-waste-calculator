@@ -22,7 +22,7 @@ struct ChatBubbleView<Content: View>: View {
         .padding(.bottom, 25)
         .background(Color("ChatBubbleColor"))
         .clipShape(Bubble())
-        .frame(maxWidth: 500)
+        .frame(maxWidth: 530)
     }
 }
 
