@@ -10,6 +10,7 @@ import SwiftUI
 struct RoundedWasteDisplay: View {
     @EnvironmentObject var game: Game
     @Binding var calculatorState: CalculatorState
+    var textOutput: () -> Text = { Text("N/A") }
     var backgroundColor: Color
     
     var body: some View {
@@ -33,7 +34,8 @@ struct RoundedWasteDisplay: View {
                     .font(.largeTitle)
                     .textCase(.uppercase)
             case .result:
-                Text("N/A")
+                textOutput()
+                    .font(.largeTitle)
             }
         }
         .frame(maxWidth: .infinity)

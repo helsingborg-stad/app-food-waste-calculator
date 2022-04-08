@@ -9,9 +9,14 @@ import SwiftUI
 
 struct CalculatorDisplayWasteOutputView: View {
     @Binding var calculatorState: CalculatorState
+    var textOutput: () -> Text
     
     var body: some View {
-        RoundedWasteDisplay(calculatorState: $calculatorState, backgroundColor: Color("CalculatorDisplayOutputColor"))
+        RoundedWasteDisplay(
+            calculatorState: $calculatorState,
+            textOutput: textOutput,
+            backgroundColor: Color("CalculatorDisplayOutputColor")
+        )
     }
 }
 
@@ -19,9 +24,10 @@ struct CalculatorDisplayOutputView_Previews: PreviewProvider {
     static var previews: some View {
         VStack {
             Text("Input state")
-            CalculatorDisplayWasteOutputView(calculatorState: Binding.constant(.input))
+            CalculatorDisplayWasteOutputView(calculatorState: Binding.constant(.input), textOutput: { Text("Input state")})
             Text("Result state")
-            CalculatorDisplayWasteOutputView(calculatorState: Binding.constant(.result))
+            CalculatorDisplayWasteOutputView(calculatorState: Binding.constant(.result), textOutput: { Text("Result state")})
         }
+        .environmentObject(Game())
     }
 }
