@@ -61,12 +61,6 @@ struct CalculatorView: View {
                 faceStatus = getFaceStatus()
             }
         }
-        
-        DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
-            navigation.next()
-            game.calculatorState = .input
-            faceStatus = .neutral
-        }
     }
     
     func handleDelete() {
@@ -89,7 +83,8 @@ struct CalculatorView: View {
             )
             CalculatorKeyboardView(handleSum: {handleSum()}, handleDelete: {handleDelete()})
         }
-        .onAppear {
+        .onDisappear {
+            game.calculatorState = .input
             game.removeAllWasteInputs()
         }
     }
