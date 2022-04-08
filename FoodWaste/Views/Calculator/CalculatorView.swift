@@ -10,6 +10,7 @@ import SwiftUI
 struct CalculatorView: View {
     @EnvironmentObject var game: Game
     @EnvironmentObject var navigation: Navigation
+    @EnvironmentObject var localization: Localization
     @State private var faceStatus: FaceStatus = .neutral
     
     func getFaceStatus() -> FaceStatus {
