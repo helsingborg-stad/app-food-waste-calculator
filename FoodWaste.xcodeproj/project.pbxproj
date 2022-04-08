@@ -32,7 +32,6 @@
 		88DA322527F34B5300439135 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88DA322427F34B5300439135 /* FaceView.swift */; };
 		F6318ED327E1D9E000F9BE03 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED227E1D9E000F9BE03 /* RoundedViews.swift */; };
 		F6318ED827E488A300F9BE03 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318ED727E488A300F9BE03 /* CalculatorView.swift */; };
-		F6318EDC27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */; };
 		F6318EDE27E488FE00F9BE03 /* CalculatorKeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */; };
 		F6318EE027E48DDB00F9BE03 /* KeyboardWastParamsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */; };
 		F6318EE227E48DFC00F9BE03 /* KeyboardFunctionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */; };
@@ -89,7 +88,6 @@
 		88DA322427F34B5300439135 /* FaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
 		F6318ED227E1D9E000F9BE03 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 		F6318ED727E488A300F9BE03 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
-		F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorDisplayOutputView.swift; sourceTree = "<group>"; };
 		F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorKeyboardView.swift; sourceTree = "<group>"; };
 		F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardWastParamsView.swift; sourceTree = "<group>"; };
 		F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFunctionsView.swift; sourceTree = "<group>"; };
@@ -235,7 +233,6 @@
 			children = (
 				F6318ED227E1D9E000F9BE03 /* RoundedViews.swift */,
 				F6318ED727E488A300F9BE03 /* CalculatorView.swift */,
-				F6318EDB27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift */,
 				F6318EDD27E488FE00F9BE03 /* CalculatorKeyboardView.swift */,
 				F6318EDF27E48DDB00F9BE03 /* KeyboardWastParamsView.swift */,
 				F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */,
@@ -401,7 +398,6 @@
 				88006FD027E0E48800BA6D4C /* FoodWasteApp.swift in Sources */,
 				885963E527FDDE30007960FD /* Localization.swift in Sources */,
 				F6318EE227E48DFC00F9BE03 /* KeyboardFunctionsView.swift in Sources */,
-				F6318EDC27E488EF00F9BE03 /* CalculatorDisplayOutputView.swift in Sources */,
 				F6596B4627E8A7F000F31A3D /* WasteParameter.swift in Sources */,
 				F6318EE027E48DDB00F9BE03 /* KeyboardWastParamsView.swift in Sources */,
 			);

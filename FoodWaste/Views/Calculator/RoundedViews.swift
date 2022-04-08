@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RoundedWasteDisplay: View {
     @EnvironmentObject var game: Game
+    @EnvironmentObject var localization: Localization
     var textOutput: () -> Text = { Text("N/A") }
     var backgroundColor: Color
     
@@ -16,25 +17,30 @@ struct RoundedWasteDisplay: View {
         HStack (alignment: .center) {
             switch game.calculatorState {
             case .input:
-                ForEach (game.wasteInputs) { waste in
-                    Image(waste.image)
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(height: 35)
-                    
-                    if waste != game.wasteInputs.last {
-                        Image(systemName: "plus")
+                if game.wasteInputs.isEmpty {
+                    textOutput()
+                        .font(.system(size: 25, weight: .bold))
+                } else {
+                    ForEach (game.wasteInputs) { waste in
+                        Image(waste.image)
                             .resizable()
-                            .frame(width: 25, height: 25)
+                            .aspectRatio(contentMode: .fit)
+                            .frame(height: 35)
+                        
+                        if waste != game.wasteInputs.last {
+                            Image(systemName: "plus")
+                                .resizable()
+                                .frame(width: 25, height: 25)
+                        }
                     }
                 }
             case .calculating:
-                Text("Beräknar")
+                Text("calcDisplayComputing".localized(localization.language))
                     .font(.largeTitle)
                     .textCase(.uppercase)
             case .result:
                 textOutput()
-                    .font(.largeTitle)
+                    .font(.system(size: 25, weight: .bold))
             }
         }
         .frame(maxWidth: .infinity)

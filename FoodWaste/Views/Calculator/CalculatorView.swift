@@ -10,6 +10,7 @@ import SwiftUI
 struct CalculatorView: View {
     @EnvironmentObject var game: Game
     @EnvironmentObject var navigation: Navigation
+    @EnvironmentObject var localization: Localization
     @State private var faceStatus: FaceStatus = .neutral
     
     func getFaceStatus() -> FaceStatus {
@@ -26,24 +27,28 @@ struct CalculatorView: View {
         }
     }
     
-    func getWasteAsText() -> Text {
+    func getDisplayText() -> Text {
         let sum = game.sumWasteScore()
         let level = game.getScoreLevel(score: sum)
         
+        if sum == 0 {
+            return Text("calcDisplayGreeting".localized(localization.language))
+        }
+        
         switch level {
         case .low:
-            return Text("low")
+            return Text("calcDisplayResultLow".localized(localization.language))
                 .foregroundColor(Color("FaceGreenColor"))
         case .medium:
-            return Text("mid")
+            return Text("calcDisplayResultMedium".localized(localization.language))
                 .foregroundColor(Color("FaceYellowColor"))
         case .high:
-            return Text("high")
+            return Text("calcDisplayResultHigh".localized(localization.language))
                 .foregroundColor(Color("FaceRedColor"))
         }
     }
     
-    func handleSum() {
+    func handleSum() -> Void {
         game.calculatorState = .calculating
         
         withAnimation(.easeInOut(duration: 0.8)) {
@@ -78,8 +83,11 @@ struct CalculatorView: View {
                 CalculatorScreenView()
                 FaceView(status: faceStatus)
             }
-            CalculatorDisplayWasteOutputView(textOutput: getWasteAsText)
-            CalculatorKeyboardView(handleSum: { handleSum() }, handleDelete: { handleDelete() })
+            RoundedWasteDisplay(
+                textOutput: getDisplayText,
+                backgroundColor: Color("CalculatorDisplayOutputColor")
+            )
+            CalculatorKeyboardView(handleSum: {handleSum()}, handleDelete: {handleDelete()})
         }
         .onAppear {
             game.removeAllWasteInputs()
@@ -93,5 +101,6 @@ struct CalculatorView_Previews: PreviewProvider {
             .padding()
             .previewInterfaceOrientation(.landscapeLeft)
             .environmentObject(Game())
+            .environmentObject(Localization())
     }
 }
