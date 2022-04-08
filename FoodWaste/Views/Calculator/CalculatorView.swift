@@ -17,9 +17,10 @@ struct CalculatorView: View {
     @State private var calculatorState: CalculatorState = .input
     @State private var faceStatus: FaceStatus = .neutral
     
-    func updateFaceStatus() -> FaceStatus {
+    func getFaceStatus() -> FaceStatus {
         let sum = game.sumWasteScore()
         let level = game.getScoreLevel(score: sum)
+        
         switch level {
         case .low:
             return .happy
@@ -27,6 +28,23 @@ struct CalculatorView: View {
             return .disappointed
         case .high:
             return .angry
+        }
+    }
+    
+    func getWasteAsText() -> Text {
+        let sum = game.sumWasteScore()
+        let level = game.getScoreLevel(score: sum)
+        
+        switch level {
+        case .low:
+            return Text("low")
+                .foregroundColor(Color("FaceGreenColor"))
+        case .medium:
+            return Text("mid")
+                .foregroundColor(Color("FaceYellowColor"))
+        case .high:
+            return Text("high")
+                .foregroundColor(Color("FaceRedColor"))
         }
     }
     
@@ -40,7 +58,7 @@ struct CalculatorView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
             calculatorState = .result
             withAnimation(.easeInOut(duration: 0.8)) {
-                faceStatus = updateFaceStatus()
+                faceStatus = getFaceStatus()
             }
         }
         
@@ -65,7 +83,7 @@ struct CalculatorView: View {
                 CalculatorScreenView()
                 FaceView(status: faceStatus)
             }
-            CalculatorDisplayWasteOutputView(calculatorState: $calculatorState)
+            CalculatorDisplayWasteOutputView(calculatorState: $calculatorState, textOutput: getWasteAsText)
             CalculatorKeyboardView(handleSum: {handleSum()}, handleDelete: {handleDelete()})
         }
         .onAppear {
