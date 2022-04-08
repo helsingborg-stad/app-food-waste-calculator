@@ -17,3 +17,5 @@
 "calcDisplayResultHigh" = "It looks like there will be quite a lot of food waste!";
 "calcDisplayResultMedium" = "It looks like there will be some food waste";
 "calcDisplayResultLow" = "I predict very little food waste!";
+"calculationResponseHigh" = "Oops, we will have to look this over!";
+"calculationResponseLow" = "Great, we want as little food waste as possible!";

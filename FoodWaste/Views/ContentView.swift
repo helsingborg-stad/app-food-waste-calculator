@@ -47,6 +47,7 @@ struct ContentView_Previews: PreviewProvider {
                 .previewDisplayName("iPad (9th generation)")
                 .previewInterfaceOrientation(.landscapeLeft)
         }
+        .environmentObject(Game())
         .environmentObject(Navigation())
         .environmentObject(Localization())
     }
