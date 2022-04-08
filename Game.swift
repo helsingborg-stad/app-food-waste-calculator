@@ -15,9 +15,14 @@ enum DisplayState {
     case input, result
 }
 
+enum CalculatorState {
+    case input, calculating, result
+}
+
 class Game: ObservableObject {
     @Published var wasteInputs: [WasteParameter] = []
-    
+    @Published var calculatorState: CalculatorState = .input
+
     init(loadTestData: Bool = false) {
         if loadTestData {
             wasteInputs.append(.gazpacho)
