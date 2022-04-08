@@ -26,19 +26,23 @@ struct CalculatorView: View {
         }
     }
     
-    func getWasteAsText() -> Text {
+    func getDisplayText() -> Text {
         let sum = game.sumWasteScore()
         let level = game.getScoreLevel(score: sum)
         
+        if sum == 0 {
+            return Text("calcDisplayGreeting".localized(localization.language))
+        }
+        
         switch level {
         case .low:
-            return Text("low")
+            return Text("calcDisplayResultLow".localized(localization.language))
                 .foregroundColor(Color("FaceGreenColor"))
         case .medium:
-            return Text("mid")
+            return Text("calcDisplayResultMedium".localized(localization.language))
                 .foregroundColor(Color("FaceYellowColor"))
         case .high:
-            return Text("high")
+            return Text("calcDisplayResultHigh".localized(localization.language))
                 .foregroundColor(Color("FaceRedColor"))
         }
     }
@@ -93,5 +97,6 @@ struct CalculatorView_Previews: PreviewProvider {
             .padding()
             .previewInterfaceOrientation(.landscapeLeft)
             .environmentObject(Game())
+            .environmentObject(Localization())
     }
 }

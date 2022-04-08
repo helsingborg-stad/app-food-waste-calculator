@@ -12,3 +12,8 @@
 "calculationResultLow" = "Tack Svinnräknaren!\nDå vet vi att det verkar bli rätt mycket mat över och att vi behöver tänka till i förväg kring vad vi kan göra för att vi inte ska slänga så mycket mat.";
 "calculationResultMedium" = "Tack Svinnräknaren!\nDå vet vi att det verkar bli rätt mycket mat över och att vi behöver tänka till i förväg kring vad vi kan göra för att vi inte ska slänga så mycket mat.";
 "calculationResultHigh" = "Tack Svinnräknaren!\nDå vet vi att det verkar bli rätt mycket mat över och att vi behöver tänka till i förväg kring vad vi kan göra för att vi inte ska slänga så mycket mat.";
+"calcDisplayGreeting" = "Hej, välj en knapp!";
+"calcDisplayComputing" = "Beräknar";
+"calcDisplayResultHigh" = "Det ser ut att bli rätt mycket matsvinn!";
+"calcDisplayResultMedium" = "Det ser ut att bli en del matsvinn!";
+"calcDisplayResultLow" = "Det verkar bli väldigt lite matsvinn!";
