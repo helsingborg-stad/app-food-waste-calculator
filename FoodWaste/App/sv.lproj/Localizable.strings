@@ -17,3 +17,5 @@
 "calcDisplayResultHigh" = "Det ser ut att bli rätt mycket matsvinn!";
 "calcDisplayResultMedium" = "Det ser ut att bli en del matsvinn!";
 "calcDisplayResultLow" = "Det verkar bli väldigt lite matsvinn!";
+"calculationResponseHigh" = "Ojdå! En sån här dag får vi tänka till!";
+"calculationResponseLow" = "Toppen, vi vill ju ha så lite svinn som möjligt!";
