@@ -9,6 +9,7 @@ import SwiftUI
 
 struct RoundedWasteDisplay: View {
     @EnvironmentObject var game: Game
+    @EnvironmentObject var localization: Localization
     var textOutput: () -> Text = { Text("N/A") }
     var backgroundColor: Color
     
@@ -34,7 +35,7 @@ struct RoundedWasteDisplay: View {
                     }
                 }
             case .calculating:
-                Text("Beräknar")
+                Text("calcDisplayComputing".localized(localization.language))
                     .font(.largeTitle)
                     .textCase(.uppercase)
             case .result:
