@@ -12,10 +12,9 @@ struct CalculatorView: View {
     @EnvironmentObject var navigation: Navigation
     @State private var faceStatus: FaceStatus = .neutral
     
-    func getFaceStatus() -> FaceStatus {
+    func updateFaceStatus() -> FaceStatus {
         let sum = game.sumWasteScore()
         let level = game.getScoreLevel(score: sum)
-        
         switch level {
         case .low:
             return .happy
@@ -26,24 +25,7 @@ struct CalculatorView: View {
         }
     }
     
-    func getWasteAsText() -> Text {
-        let sum = game.sumWasteScore()
-        let level = game.getScoreLevel(score: sum)
-        
-        switch level {
-        case .low:
-            return Text("low")
-                .foregroundColor(Color("FaceGreenColor"))
-        case .medium:
-            return Text("mid")
-                .foregroundColor(Color("FaceYellowColor"))
-        case .high:
-            return Text("high")
-                .foregroundColor(Color("FaceRedColor"))
-        }
-    }
-    
-    func handleSum() {
+    func handleSum() -> Void {
         game.calculatorState = .calculating
         
         withAnimation(.easeInOut(duration: 0.8)) {
@@ -53,7 +35,7 @@ struct CalculatorView: View {
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
             game.calculatorState = .result
             withAnimation(.easeInOut(duration: 0.8)) {
-                faceStatus = getFaceStatus()
+                faceStatus = updateFaceStatus()
             }
         }
         
