@@ -82,8 +82,11 @@ struct CalculatorView: View {
                 CalculatorScreenView()
                 FaceView(status: faceStatus)
             }
-            CalculatorDisplayWasteOutputView(textOutput: getWasteAsText)
-            CalculatorKeyboardView(handleSum: { handleSum() }, handleDelete: { handleDelete() })
+            RoundedWasteDisplay(
+                textOutput: getDisplayText,
+                backgroundColor: Color("CalculatorDisplayOutputColor")
+            )
+            CalculatorKeyboardView(handleSum: {handleSum()}, handleDelete: {handleDelete()})
         }
         .onAppear {
             game.removeAllWasteInputs()
