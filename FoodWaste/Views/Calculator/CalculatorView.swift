@@ -7,14 +7,9 @@
 
 import SwiftUI
 
-enum CalculatorState {
-    case input, calculating, result
-}
-
 struct CalculatorView: View {
     @EnvironmentObject var game: Game
     @EnvironmentObject var navigation: Navigation
-    @State private var calculatorState: CalculatorState = .input
     @State private var faceStatus: FaceStatus = .neutral
     
     func getFaceStatus() -> FaceStatus {
@@ -48,15 +43,15 @@ struct CalculatorView: View {
         }
     }
     
-    func handleSum() -> Void {
-        calculatorState = .calculating
+    func handleSum() {
+        game.calculatorState = .calculating
         
         withAnimation(.easeInOut(duration: 0.8)) {
             faceStatus = .thinking
         }
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 4.0) {
-            calculatorState = .result
+            game.calculatorState = .result
             withAnimation(.easeInOut(duration: 0.8)) {
                 faceStatus = getFaceStatus()
             }
@@ -64,14 +59,14 @@ struct CalculatorView: View {
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 8.0) {
             navigation.next()
-            calculatorState = .input
+            game.calculatorState = .input
             faceStatus = .neutral
         }
     }
     
-    func handleDelete() -> Void {
+    func handleDelete() {
         withAnimation(.easeInOut(duration: 0.4)) {
-            calculatorState = .input
+            game.calculatorState = .input
             faceStatus = .neutral
         }
         game.removeAllWasteInputs()
@@ -83,8 +78,8 @@ struct CalculatorView: View {
                 CalculatorScreenView()
                 FaceView(status: faceStatus)
             }
-            CalculatorDisplayWasteOutputView(calculatorState: $calculatorState, textOutput: getWasteAsText)
-            CalculatorKeyboardView(handleSum: {handleSum()}, handleDelete: {handleDelete()})
+            CalculatorDisplayWasteOutputView(textOutput: getWasteAsText)
+            CalculatorKeyboardView(handleSum: { handleSum() }, handleDelete: { handleDelete() })
         }
         .onAppear {
             game.removeAllWasteInputs()

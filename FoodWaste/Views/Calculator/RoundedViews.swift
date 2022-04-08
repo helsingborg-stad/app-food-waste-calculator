@@ -9,13 +9,12 @@ import SwiftUI
 
 struct RoundedWasteDisplay: View {
     @EnvironmentObject var game: Game
-    @Binding var calculatorState: CalculatorState
     var textOutput: () -> Text = { Text("N/A") }
     var backgroundColor: Color
     
     var body: some View {
         HStack (alignment: .center) {
-            switch calculatorState {
+            switch game.calculatorState {
             case .input:
                 ForEach (game.wasteInputs) { waste in
                     Image(waste.image)
@@ -108,9 +107,9 @@ struct RoundedViews_Previews: PreviewProvider {
             VStack (spacing: 20) {
                 Group {
                     Text("Display inputs:")
-                    RoundedWasteDisplay(calculatorState: Binding.constant(.input), backgroundColor: Color("CalculatorDisplayOutputColor"))
-                    RoundedWasteDisplay(calculatorState: Binding.constant(.result), backgroundColor: Color("CalculatorDisplayOutputColor"))
-                    RoundedWasteDisplay(calculatorState: Binding.constant(.calculating), backgroundColor: Color("CalculatorDisplayOutputColor"))
+                    RoundedWasteDisplay(backgroundColor: Color("CalculatorDisplayOutputColor"))
+                    RoundedWasteDisplay(backgroundColor: Color("CalculatorDisplayOutputColor"))
+                    RoundedWasteDisplay(backgroundColor: Color("CalculatorDisplayOutputColor"))
                 }
                 Group {
                     Text("Waste Buttons disabled:")
