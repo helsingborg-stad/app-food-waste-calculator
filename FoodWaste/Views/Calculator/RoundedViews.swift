@@ -19,7 +19,7 @@ struct RoundedWasteDisplay: View {
             case .input:
                 if game.wasteInputs.isEmpty {
                     textOutput()
-                        .font(.system(size: 25, weight: .bold))
+                        .font(.system(size: 36, weight: .regular))
                 } else {
                     ForEach (game.wasteInputs) { waste in
                         Image(waste.image)
@@ -40,11 +40,11 @@ struct RoundedWasteDisplay: View {
                     .textCase(.uppercase)
             case .result:
                 textOutput()
-                    .font(.system(size: 25, weight: .bold))
+                    .font(.system(size: 21, weight: .bold))
             }
         }
         .frame(maxWidth: .infinity)
-        .frame(height: 70)
+        .frame(height: 60)
         .background(backgroundColor)
         .cornerRadius(10)
     }
@@ -54,7 +54,7 @@ struct RoundedButton: View {
     var buttonAction: () -> Void
     var buttonImage: Image
     var buttonBackgroundColor: Color
-    var imageFrameHeight: CGFloat = 40
+    var imageFrameHeight: CGFloat = 58
     
     var body: some View {
         Button(action: { buttonAction() }) {
@@ -63,9 +63,10 @@ struct RoundedButton: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: imageFrameHeight)
+                    .padding()
             }
             .frame(maxWidth: .infinity)
-            .frame(height: 70)
+            .frame(height: 80)
             .background(buttonBackgroundColor)
             .cornerRadius(10)
         }

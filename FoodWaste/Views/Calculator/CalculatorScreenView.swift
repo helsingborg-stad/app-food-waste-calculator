@@ -11,7 +11,7 @@ struct CalculatorScreenView: View {
     var body: some View {
         ZStack {}
         .frame(maxWidth: .infinity)
-        .frame(height: 70)
+        .frame(height: 80)
         .background(Color("CalculatorFaceColor"))
         .cornerRadius(10)
         .overlay(
