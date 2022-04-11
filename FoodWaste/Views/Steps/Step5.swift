@@ -18,12 +18,15 @@ struct Step5: View {
             ZStack {
                 Image("tabletOn")
                     .resizable()
-                Image("calculatorBackground")
-                    .resizable()
-                    .padding()
-                CalculatorView()
-                    .padding([.horizontal, .vertical], 35)
-
+                Group {
+                    Image("calculatorBackground")
+                        .resizable()
+                        .padding()
+                    CalculatorView()
+                        .padding([.horizontal, .vertical], 45)
+                }
+                .padding(30)
+                
                 ChatBubbleView {
                     ChatBubbleText(text: getResponse().localized(localization.language))
                     HStack {
