@@ -6,11 +6,11 @@
   
 */
 
-"step1" = "Hi, do you want to help me\nplan the school lunch?\n\nWe want to beware of food waste!";
-"step2" = "Dish, sound, queue and weather affect the amount that will be thrown away!";
-"step3" = "AI buddy food calculator helps us.\n\nLets try together!";
-"calculationResultLow" = "A day with 24g food waste / student is a little food waste.\n\nDo you want to try again?";
-"calculationResultHigh" = "A day with 68g food waste / student is a lot of food waste. \n\nThen we need to order less food so we do not have to throw away food unnecessarily.\n\nDo you want to try again?";
+"step1" = "Hi, do you want to help me find out how much food we'll throw away?\n\nWe want as little food waste as possible.";
+"step2" = "There are factors that make us throw away more or less food.\n\nWhich dish that will be served, or if the noise is too loud, if we need to wait a long time or if it is sunny or rainy outside for example.";
+"step3" = "It can be difficult to calculate how much we will throw away in advance, but a computer with artificial intelligence can help us if we give it some information.\nThe Waste Calculator can predict the food waste if we tell it a little about how the weather and sound will be for example.\nLet’s try!";
+"calculationResultLow" = "Thank you Waste Calculator! Now we know that it looks like there will not be a lot of waste and that we will not have to throw away so much.\n\nWould you like to try again?";
+"calculationResultHigh" = "Thank you Waste Calculator! Now we know that there will be quite a lot of food left over and that we need to think in advance about what we can do to throw away less food.\n\nWould you like to try again?";
 "calcDisplayGreeting" = "Hello, choose a button!";
 "calcDisplayComputing" = "Calculates";
 "calcDisplayResultHigh" = "It looks like there will be quite a lot of food waste!";
