@@ -63,7 +63,7 @@ struct RoundedButton: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(height: imageFrameHeight)
-                    .padding()
+                    .padding(.horizontal, 12)
             }
             .frame(maxWidth: .infinity)
             .frame(height: 80)
@@ -87,7 +87,7 @@ struct RoundedWasteButton: View {
             buttonBackgroundColor: Color(waste.type.color)
         )
             .opacity(wasteSelected ? 0.5 : 1)
-            .shadow(color: wasteSelected ? .gray : .black, radius: 2, x: 4, y:  4)
+            .shadow(color: wasteSelected ? .gray : .black, radius: 2, x: 4, y: 4)
             .disabled(typeSelected ? true : false)
     }
 }
