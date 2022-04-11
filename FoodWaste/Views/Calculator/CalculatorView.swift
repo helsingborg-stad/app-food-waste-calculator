@@ -81,7 +81,11 @@ struct CalculatorView: View {
                 textOutput: getDisplayText,
                 backgroundColor: Color("CalculatorDisplayOutputColor")
             )
-            CalculatorKeyboardView(handleSum: {handleSum()}, handleDelete: {handleDelete()})
+            CalculatorKeyboardView(
+                handleSum: { handleSum() },
+                handleDelete: { handleDelete() },
+                disableSum: { game.wasteInputs.count < 4}
+            )
         }
         .onDisappear {
             game.calculatorState = .input
