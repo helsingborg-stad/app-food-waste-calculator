@@ -30,8 +30,6 @@ struct Step6: View {
         switch level {
         case .low:
             return "calculationResultLow"
-        case .medium:
-            return "calculationResultMedium"
         case .high:
             return "calculationResultHigh"
         }
