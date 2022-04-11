@@ -20,8 +20,6 @@ struct CalculatorView: View {
         switch level {
         case .low:
             return .happy
-        case .medium:
-            return .disappointed
         case .high:
             return .angry
         }
@@ -39,9 +37,6 @@ struct CalculatorView: View {
         case .low:
             return Text("calcDisplayResultLow".localized(localization.language))
                 .foregroundColor(Color("FaceGreenColor"))
-        case .medium:
-            return Text("calcDisplayResultMedium".localized(localization.language))
-                .foregroundColor(Color("FaceYellowColor"))
         case .high:
             return Text("calcDisplayResultHigh".localized(localization.language))
                 .foregroundColor(Color("FaceRedColor"))

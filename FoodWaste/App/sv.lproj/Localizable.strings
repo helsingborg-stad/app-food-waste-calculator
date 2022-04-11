@@ -10,12 +10,10 @@
 "step2" = "Det finns sånt som gör att vi slänger mer eller mindre mat.\n\nVilken mat det är, om ljudet är högt, om vi behöver vänta länge eller om det är soligt eller regnigt ute till exempel.";
 "step3" = "Det är svårt att räkna ut hur mycket vi kommer slänga så därför tar vi hjälp av en smart dator.\nVår AI-kompis Svinnräknaren kan hjälpa oss om vi berättar lite om hur till exempel vädret och ljudet kommer vara.\n\nNu provar vi!";
 "calculationResultLow" = "Tack Svinnräknaren!\nDå vet vi att det verkar bli rätt mycket mat över och att vi behöver tänka till i förväg kring vad vi kan göra för att vi inte ska slänga så mycket mat.";
-"calculationResultMedium" = "Tack Svinnräknaren!\nDå vet vi att det verkar bli rätt mycket mat över och att vi behöver tänka till i förväg kring vad vi kan göra för att vi inte ska slänga så mycket mat.";
 "calculationResultHigh" = "Tack Svinnräknaren!\nDå vet vi att det verkar bli rätt mycket mat över och att vi behöver tänka till i förväg kring vad vi kan göra för att vi inte ska slänga så mycket mat.";
 "calcDisplayGreeting" = "Hej, välj en knapp!";
 "calcDisplayComputing" = "Beräknar";
 "calcDisplayResultHigh" = "Det ser ut att bli rätt mycket matsvinn!";
-"calcDisplayResultMedium" = "Det ser ut att bli en del matsvinn!";
 "calcDisplayResultLow" = "Det verkar bli väldigt lite matsvinn!";
 "calculationResponseHigh" = "Ojdå! En sån här dag får vi tänka till!";
 "calculationResponseLow" = "Toppen, vi vill ju ha så lite svinn som möjligt!";

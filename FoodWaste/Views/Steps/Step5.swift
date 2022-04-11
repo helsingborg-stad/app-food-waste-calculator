@@ -60,9 +60,6 @@ struct Step5: View {
             return "calculationResponseLow"
         case .high:
             return "calculationResponseHigh"
-        // TODO: REMOVE DEFAULT CASE WHEN MEDIUM ENUM IS GONE
-        default:
-            return ""
         }
     }
 }

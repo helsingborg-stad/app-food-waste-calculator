@@ -10,12 +10,10 @@
 "step2" = "Dish, sound, queue and weather affect the amount that will be thrown away!";
 "step3" = "AI buddy food calculator helps us.\n\nLets try together!";
 "calculationResultLow" = "A day with 24g food waste / student is a little food waste.\n\nDo you want to try again?";
-"calculationResultMedium" = "A day with 36g food waste / student is average?? food waste. \n\nDo you want to try again?";
 "calculationResultHigh" = "A day with 68g food waste / student is a lot of food waste. \n\nThen we need to order less food so we do not have to throw away food unnecessarily.\n\nDo you want to try again?";
 "calcDisplayGreeting" = "Hello, choose a button!";
 "calcDisplayComputing" = "Calculates";
 "calcDisplayResultHigh" = "It looks like there will be quite a lot of food waste!";
-"calcDisplayResultMedium" = "It looks like there will be some food waste";
 "calcDisplayResultLow" = "I predict very little food waste!";
 "calculationResponseHigh" = "Oops, we will have to look this over!";
 "calculationResponseLow" = "Great, we want as little food waste as possible!";
