@@ -26,8 +26,8 @@ struct Step5: View {
                         .padding([.horizontal, .vertical], 45)
                 }
                 .padding(30)
-                
-                ChatBubbleView {
+
+                ChatBubbleView(content: Group {
                     ChatBubbleText(text: getResponse().localized(localization.language))
                     HStack {
                         Spacer()
@@ -35,19 +35,20 @@ struct Step5: View {
                             navigation.next()
                         })
                     }
-                }
-                .opacity(responseViewOpacity)
-                .onReceive(game.$calculatorState) { calculatorState in
-                    if calculatorState == .result {
-                        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-                            withAnimation(.easeInOut(duration: 0.3)) {
-                                responseViewOpacity = 1.0
+                },
+                arrowDirection: .right)
+                    .opacity(responseViewOpacity)
+                    .onReceive(game.$calculatorState) { calculatorState in
+                        if calculatorState == .result {
+                            DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                                withAnimation(.easeInOut(duration: 0.3)) {
+                                    responseViewOpacity = 1.0
+                                }
                             }
                         }
                     }
-                }
-                .frame(width: 300)
-                .offset(x: geo.size.width * -0.33, y: geo.size.height * -0.23)
+                    .frame(width: 300)
+                    .offset(x: geo.size.width * -0.33, y: geo.size.height * -0.23)
             }
             .aspectRatio(0.75, contentMode: .fit)
             .frame(width: geo.size.height * 0.75, height: geo.size.height * 0.75)

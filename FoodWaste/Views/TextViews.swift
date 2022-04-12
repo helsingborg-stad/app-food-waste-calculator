@@ -19,8 +19,8 @@ struct ChatBubbleText: View {
 
 struct TextViews_Previews: PreviewProvider {
     static var previews: some View {
-        ChatBubbleView {
+        ChatBubbleView(content:
             ChatBubbleText(text: "Hello world")
-        }
+        )
     }
 }
