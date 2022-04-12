@@ -10,7 +10,7 @@ import SwiftUI
 struct KeyboardFunctionsView: View {
     var handleSum: () -> Void
     var handleDelete: () -> Void
-    var disableSum: () -> Bool = { false }
+    var disableSum: Bool = false
     @State private var disableFunctionKeys = false
     
     func handleSumAction() {

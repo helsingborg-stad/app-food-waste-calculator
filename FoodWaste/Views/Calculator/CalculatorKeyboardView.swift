@@ -18,7 +18,7 @@ struct CalculatorKeyboardView: View {
             KeyboardFunctionsView(
                 handleSum: { handleSum() },
                 handleDelete: { handleDelete() },
-                disableSum: disableSum
+                disableSum: disableSum()
             )
         }
     }

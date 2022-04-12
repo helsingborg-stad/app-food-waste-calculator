@@ -94,7 +94,7 @@ struct RoundedWasteButton: View {
 struct RoundedFunctionButton: View {
     var function: FunctionParameter
     var buttonAction: () -> Void
-    var disableButton: () -> Bool = { false }
+    var disableButton: Bool = false
     
     var body: some View {
         RoundedButton(
@@ -105,7 +105,7 @@ struct RoundedFunctionButton: View {
         )
             .foregroundColor(.black)
             .shadow(color: .black, radius: 5, x: 4, y: 4)
-            .disabled(disableButton())
+            .disabled(disableButton)
     }
 }
 
