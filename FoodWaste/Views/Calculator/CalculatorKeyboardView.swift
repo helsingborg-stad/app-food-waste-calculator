@@ -10,11 +10,16 @@ import SwiftUI
 struct CalculatorKeyboardView: View {
     var handleSum: () -> Void
     var handleDelete: () -> Void
+    var disableSum: Bool = false
     
     var body: some View {
         VStack {
             KeyboardWastParamsView()
-            KeyboardFunctionsView(handleSum: { handleSum() }, handleDelete: { handleDelete() })
+            KeyboardFunctionsView(
+                handleSum: { handleSum() },
+                handleDelete: { handleDelete() },
+                disableSum: disableSum
+            )
         }
     }
 }
