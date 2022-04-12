@@ -84,7 +84,7 @@ struct CalculatorView: View {
             CalculatorKeyboardView(
                 handleSum: { handleSum() },
                 handleDelete: { handleDelete() },
-                disableSum: { game.wasteInputs.count < 4}
+                disableSum: game.wasteInputs.count < 4
             )
         }
         .onDisappear {
