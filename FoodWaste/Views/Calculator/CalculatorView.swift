@@ -37,10 +37,10 @@ struct CalculatorView: View {
         switch level {
         case .low:
             return Text("calcDisplayResultLow".localized(localization.language))
-                .foregroundColor(Color("FaceGreenColor"))
+                .foregroundColor(Color("ColorGreen"))
         case .high:
             return Text("calcDisplayResultHigh".localized(localization.language))
-                .foregroundColor(Color("FaceRedColor"))
+                .foregroundColor(Color("ColorRed"))
         }
     }
     
