@@ -12,13 +12,15 @@ struct Step3: View {
     @EnvironmentObject var localization: Localization
     var body: some View {
         GeometryReader { geo in
-            ChatBubbleView {
-                ChatBubbleText(text: "step3".localized(localization.language))
-                HStack {
-                    Spacer()
-                    ForwardButton(action: { navigation.next() })
+            ChatBubbleView(content:
+                Group {
+                    ChatBubbleText(text: "step3".localized(localization.language))
+                    HStack {
+                        Spacer()
+                        ForwardButton(action: { navigation.next() })
+                    }
                 }
-            }
+            )
             .offset(x: geo.size.width * 0.47, y: geo.size.height * 0.16)
         }
     }
