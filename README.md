@@ -30,7 +30,7 @@
 
 [![Svinnräknaren Screen Shot][product-screenshot]](https://example.com)
 
-"Svinnräknaren" is an iOS app for calculating food waste in public schools. The app is developed to be shown during the h22 city fair.
+"Svinnräknaren" is an iOS app for calculating food waste in public schools. The app is developed to be shown during the H22 city fair.
 
 
 ### Built With
