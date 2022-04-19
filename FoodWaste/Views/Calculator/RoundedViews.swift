@@ -116,9 +116,7 @@ struct RoundedViews_Previews: PreviewProvider {
             VStack (spacing: 20) {
                 Group {
                     Text("Display inputs:")
-                    RoundedWasteDisplay(backgroundColor: Color("CalculatorDisplayOutputColor"))
-                    RoundedWasteDisplay(backgroundColor: Color("CalculatorDisplayOutputColor"))
-                    RoundedWasteDisplay(backgroundColor: Color("CalculatorDisplayOutputColor"))
+                    RoundedWasteDisplay(textOutput: {Text("Hello")}, backgroundColor: Color("CalculatorDisplayOutputColor"))
                 }
                 Group {
                     Text("Waste Buttons disabled:")
