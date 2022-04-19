@@ -36,10 +36,6 @@ class Game: ObservableObject {
         wasteInputs.append(waste)
     }
 
-    func resetWasteScore() {
-        wasteInputs.removeAll()
-    }
-
     func sumWasteScore() -> Int {
         var sumImpact = 0
 
