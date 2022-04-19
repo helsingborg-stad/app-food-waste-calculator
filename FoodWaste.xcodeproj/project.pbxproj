@@ -37,6 +37,7 @@
 		F6318EE227E48DFC00F9BE03 /* KeyboardFunctionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */; };
 		F6318EE427E4A0D200F9BE03 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6318EE327E4A0D200F9BE03 /* Game.swift */; };
 		F6596B4627E8A7F000F31A3D /* WasteParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6596B4527E8A7F000F31A3D /* WasteParameter.swift */; };
+		F6A2C2E8280EAAD00012D3F4 /* GameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6A2C2E7280EAAD00012D3F4 /* GameTests.swift */; };
 		F6E1FBC127EB50B900781FA6 /* FunctionParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6E1FBC027EB50B900781FA6 /* FunctionParameter.swift */; };
 /* End PBXBuildFile section */
 
@@ -93,6 +94,7 @@
 		F6318EE127E48DFC00F9BE03 /* KeyboardFunctionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardFunctionsView.swift; sourceTree = "<group>"; };
 		F6318EE327E4A0D200F9BE03 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = SOURCE_ROOT; };
 		F6596B4527E8A7F000F31A3D /* WasteParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WasteParameter.swift; sourceTree = SOURCE_ROOT; };
+		F6A2C2E7280EAAD00012D3F4 /* GameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTests.swift; sourceTree = "<group>"; };
 		F6E1FBC027EB50B900781FA6 /* FunctionParameter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionParameter.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
@@ -165,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				88C5E4AD27E9F26400D4D68F /* NavigationTests.swift */,
+				F6A2C2E7280EAAD00012D3F4 /* GameTests.swift */,
 			);
 			path = FoodWasteTests;
 			sourceTree = "<group>";
@@ -408,6 +411,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				88C5E4AE27E9F26400D4D68F /* NavigationTests.swift in Sources */,
+				F6A2C2E8280EAAD00012D3F4 /* GameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
