@@ -8,35 +8,54 @@
 import XCTest
 
 class FoodWasteUITests: XCTestCase {
+    var app: XCUIApplication!
 
     override func setUpWithError() throws {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-
-        // In UI tests it is usually best to stop immediately when a failure occurs.
+        try super.setUpWithError()
         continueAfterFailure = false
-
-        // In UI tests it’s important to set the initial state - such as interface orientation - required for your tests before they run. The setUp method is a good place to do this.
-    }
-
-    override func tearDownWithError() throws {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() throws {
-        // UI tests must launch the application that they test.
-        let app = XCUIApplication()
+        app = XCUIApplication()
         app.launch()
-
-        // Use recording to get started writing UI tests.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
+    func testHighScoreResult() throws {
+        let calcDisplayResultHigh = app.staticTexts["Det ser ut att bli rätt mycket matsvinn!"]
+        let calculationResponseHigh = app.staticTexts["Ojdå! En sån här dag får vi tänka till!"]
+
+        let forwardButton = app.buttons["forward"]
+        forwardButton.tap()
+        forwardButton.tap()
+        forwardButton.tap()
+        sleep(3)
+        app.buttons["startButton"].tap()
+        app.buttons["burger"].tap()
+        app.buttons["soundHigh"].tap()
+        app.buttons["queueLong"].tap()
+        app.buttons["sun"].tap()
+        app.buttons["equal"].tap()
+        sleep(8)
+        XCTAssertTrue(calcDisplayResultHigh.exists)
+        XCTAssertTrue(calculationResponseHigh.exists)
+        forwardButton.tap()
+    }
+
+    func testLowScoreResult() throws {
+        let calcDisplayResultLow = app.staticTexts["Det verkar bli väldigt lite matsvinn!"]
+        let calculationResponseLow = app.staticTexts["Toppen, vi vill ju ha så lite svinn som möjligt!"]
+
+        let forwardButton = app.buttons["forward"]
+        forwardButton.tap()
+        forwardButton.tap()
+        forwardButton.tap()
+        sleep(3)
+        app.buttons["startButton"].tap()
+        app.buttons["gazpacho"].tap()
+        app.buttons["soundLow"].tap()
+        app.buttons["queueShort"].tap()
+        app.buttons["rain"].tap()
+        app.buttons["equal"].tap()
+        sleep(8)
+        XCTAssertTrue(calcDisplayResultLow.exists)
+        XCTAssertTrue(calculationResponseLow.exists)
+        forwardButton.tap()
     }
 }
