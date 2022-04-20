@@ -31,7 +31,7 @@ struct CalculatorView: View {
         
         if sum == 0 {
             return Text("calcDisplayGreeting".localized(localization.language))
-                .foregroundColor(Color("CalculatorDisplayGreetingColor"))
+                .foregroundColor(Color("CalculatorDisplayTextColor"))
         }
         
         switch level {
