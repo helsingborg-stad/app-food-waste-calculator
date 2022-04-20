@@ -14,13 +14,13 @@ enum FaceStatus: String, Identifiable {
     var color: String {
         switch self {
         case .neutral, .thinking:
-            return "FaceBlueColor"
+            return "ColorBlue"
         case .disappointed:
-            return "FaceYellowColor"
+            return "ColorYellow"
         case .angry:
-            return "FaceRedColor"
+            return "ColorRed"
         case .happy:
-            return "FaceGreenColor"
+            return "ColorGreen"
         }
     }
     

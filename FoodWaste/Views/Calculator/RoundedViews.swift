@@ -31,6 +31,7 @@ struct RoundedWasteDisplay: View {
                             Image(systemName: "plus")
                                 .resizable()
                                 .frame(width: 25, height: 25)
+                                .foregroundColor(Color("CalculatorDisplayTextColor"))
                         }
                     }
                 }
@@ -38,9 +39,11 @@ struct RoundedWasteDisplay: View {
                 Text("calcDisplayComputing".localized(localization.language))
                     .font(.largeTitle)
                     .textCase(.uppercase)
+                    .foregroundColor(Color("CalculatorDisplayTextColor"))
             case .result:
                 textOutput()
                     .font(.system(size: 21, weight: .bold))
+                    .foregroundColor(Color("CalculatorDisplayTextColor"))
             }
         }
         .frame(maxWidth: .infinity)
