@@ -15,6 +15,7 @@
 		88006FED27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */; };
 		88006FFE27E0ECA300BA6D4C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */; };
 		8800700027E1C93300BA6D4C /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */; };
+		880E7FC1280EE3FD001C2A75 /* LocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 880E7FC0280EE3FD001C2A75 /* LocalizationTests.swift */; };
 		883FE55D27EC7B3700FDB8B8 /* Step5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 883FE55C27EC7B3700FDB8B8 /* Step5.swift */; };
 		885963DE27FC8AB9007960FD /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 885963E027FC8AB9007960FD /* Localizable.strings */; };
 		885963E527FDDE30007960FD /* Localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 885963E427FDDE30007960FD /* Localization.swift */; };
@@ -70,6 +71,7 @@
 		88006FEC27E0E48B00BA6D4C /* FoodWasteUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodWasteUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		88006FFD27E0ECA300BA6D4C /* BackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		88006FFF27E1C93300BA6D4C /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
+		880E7FC0280EE3FD001C2A75 /* LocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationTests.swift; sourceTree = "<group>"; };
 		883FE55C27EC7B3700FDB8B8 /* Step5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step5.swift; sourceTree = "<group>"; };
 		885963DB27FC4913007960FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		885963DF27FC8AB9007960FD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 			children = (
 				88C5E4AD27E9F26400D4D68F /* NavigationTests.swift */,
 				F6A2C2E7280EAAD00012D3F4 /* GameTests.swift */,
+				880E7FC0280EE3FD001C2A75 /* LocalizationTests.swift */,
 			);
 			path = FoodWasteTests;
 			sourceTree = "<group>";
@@ -412,6 +415,7 @@
 			files = (
 				88C5E4AE27E9F26400D4D68F /* NavigationTests.swift in Sources */,
 				F6A2C2E8280EAAD00012D3F4 /* GameTests.swift in Sources */,
+				880E7FC1280EE3FD001C2A75 /* LocalizationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
