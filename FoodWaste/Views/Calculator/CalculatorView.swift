@@ -83,10 +83,6 @@ struct CalculatorView: View {
                 disableSum: game.wasteInputs.count < 4
             )
         }
-        .onDisappear {
-            game.calculatorState = .input
-            game.removeAllWasteInputs()
-        }
     }
 }
 
