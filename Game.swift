@@ -58,4 +58,9 @@ class Game: ObservableObject {
             return .high
         }
     }
+
+    func reset() {
+        removeAllWasteInputs()
+        calculatorState = .input
+    }
 }

@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BackgroundView: View {
+    @EnvironmentObject var game: Game
     @EnvironmentObject var navigation: Navigation
     @EnvironmentObject var localization: Localization
 
@@ -32,8 +33,11 @@ struct BackgroundView: View {
                     .offset(x: 70, y: 0)
                     Spacer()
                     if navigation.step > 0 {
-                        ResetButton(action: { navigation.reset() })
-                            .offset(x: -70, y: 0)
+                        ResetButton(action: {
+                            game.reset()
+                            navigation.reset()
+                        })
+                        .offset(x: -70, y: 0)
                     }
                 }
                 .padding(.top, 20)
@@ -62,6 +66,7 @@ struct BackgroundView_Previews: PreviewProvider {
                 .previewDisplayName("iPad (9th generation)")
                 .previewInterfaceOrientation(.landscapeLeft)
         }
+        .environmentObject(Game())
         .environmentObject(Navigation())
         .environmentObject(Localization())
     }

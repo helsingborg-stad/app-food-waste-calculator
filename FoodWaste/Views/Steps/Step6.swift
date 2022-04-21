@@ -18,7 +18,10 @@ struct Step6: View {
                     ChatBubbleText(text: getLevelMessage().localized(localization.language))
                     HStack {
                         Spacer()
-                        ForwardButton(action: { navigation.previous() })
+                        ForwardButton(action: {
+                            game.reset()
+                            navigation.previous()
+                        })
                     }
                 }
             )
